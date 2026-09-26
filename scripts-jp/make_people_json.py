@@ -56,7 +56,8 @@ def main():
                                     "id": "house-of-councillors", "name": "参議院"}
 
     for i, (name, p) in enumerate(sorted(people.items()), start=1):
-        pid = f"jp.go.ndl.kokkai/person/{i}"
+        # TWFY の person_names.person_id は int 列なので、IDは整数にする。
+        pid = str(900000 + i)
         persons.append({
             "id": pid,
             "identifiers": [{"identifier": name, "scheme": "kokkai_speaker_name"}],
@@ -70,7 +71,7 @@ def main():
             if g:
                 oid = "party/" + re.sub(r"[^\w぀-ヿ一-鿿]+", "-", g).strip("-")
                 orgs.setdefault(oid, {"classification": "party", "id": oid, "name": g})
-            m = {"id": f"jp.go.ndl.kokkai/member/{len(memberships)+1}",
+            m = {"id": str(900000 + len(memberships) + 1),
                  "person_id": pid, "organization_id": house,
                  "start_date": start, "end_date": end}
             if oid:

@@ -25,6 +25,8 @@ use POSIX qw(strftime);
 use Data::Dumper;
 use Unicode::Collate;
 
+my (%jp_cons_seq, $jp_cons_n);
+$jp_cons_n = 0;
 my %slug_to_house_id = (
     'crown' => 0,
     'house-of-commons' => 1,
@@ -33,7 +35,16 @@ my %slug_to_house_id = (
     'scottish-parliament' => 4,
     'welsh-parliament' => 5,
     'london-assembly' => 6,
+    # 日本の国会。画面側は HOUSE_TYPE_COMMONS(=1) を147ファイルで直に使っているので、
+    # 別番号を振ると議員一覧も議員ページも空になる（2026-09-27 に実測）。
+    # 「下院＝選挙区から1人ずつ／上院＝それ以外」という構造が衆参と同じ形なので、
+    # 衆議院を 1、参議院を 2 に当てる。**英国のデータと同じDBに混ぜないこと。**
+    'house-of-representatives' => 1,
+    'house-of-councillors' => 2,
 );
+
+# 選挙区を持つ院。英国は house-of-commons だけだったが、日本の衆議院も持つ。
+my %house_has_constituency = map { $_ => 1 } ('house-of-commons', 'house-of-representatives');
 
 my $verbose;
 my $from = '';
@@ -110,9 +121,15 @@ sub load_constituencies {
     my $constituencyadd = $dbh->prepare("replace into constituency (cons_id, name, main_name, from_date, to_date) values (?, ?, ?, ?, ?)");
     my $Collator = Unicode::Collate->new(normalization => undef, level => 1);
     foreach my $cons (@$j) {
-        next unless $cons->{organization_id} eq "house-of-commons";
+        next unless $house_has_constituency{$cons->{organization_id} || ''};
 
         (my $consid = $cons->{id}) =~ s#uk.org.publicwhip/cons/##;
+        # 日本側のIDは jp.go.ndl.kokkai/cons/<選挙区キー>。cons_id は整数の列なので、
+        # 選挙区キーの並び順から通し番号を振る（キー自体は identifiers に残してある）。
+        if ($consid =~ m#^jp\.go\.ndl\.kokkai/cons/#) {
+            $jp_cons_seq{$consid} //= ++$jp_cons_n;
+            $consid = 1000 + $jp_cons_seq{$consid};
+        }
 
         my $start_date = $cons->{start_date};
         $start_date .= '-00-00' if length($start_date) == 4;
@@ -217,8 +234,12 @@ sub load_member {
     }
 
     my $constituency = '';
-    if ($org_slug ne 'house-of-lords' && $org_slug ne 'crown') {
-        $constituency = $posts{$member->{post_id}}{area}{name};
+    # post_id が無い所属（会議録の発言者など、選挙区が分からない人）は選挙区を空にする。
+    # 上流は post_id があることを前提にしていて、無いと undef で落ちた（2026-09-27）。
+    if ($member->{post_id}
+        && $org_slug ne 'house-of-lords' && $org_slug ne 'crown'
+        && $org_slug ne 'house-of-councillors') {
+        $constituency = $posts{$member->{post_id}}{area}{name} // '';
     }
 
     my $party = $member->{on_behalf_of_id} ? $organizations{$member->{on_behalf_of_id}}{name} : '';
