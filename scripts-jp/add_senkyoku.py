@@ -18,7 +18,7 @@
 """
 import argparse, json, os, re, sqlite3, sys
 
-GIIN_DB = "/home/kojima/work/xb4g/giin/data/giin.sqlite"
+GIIN_DB = os.environ.get("GIIN_DB", "data/giin.sqlite")  # 議員・選挙区のDB。場所は環境変数で渡す
 HOUSE = "house-of-representatives"   # 小選挙区は衆議院
 
 

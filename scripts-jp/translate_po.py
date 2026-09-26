@@ -16,7 +16,7 @@
 """
 import argparse, json, os, re, sys, time, urllib.request
 
-OLLAMA = os.environ.get("OLLAMA_URL", "http://192.168.0.3:11434") + "/api/generate"
+OLLAMA = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434") + "/api/generate"
 MODEL = os.environ.get("OLLAMA_MODEL", "gemma4:12b-it-qat")
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POT = os.path.join(HERE, "locale", "TheyWorkForYou.pot")
