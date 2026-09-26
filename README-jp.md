@@ -81,7 +81,7 @@ docker compose exec -T -e TWFY_CJK_NGRAM=1 twfy sh -c "cd /twfy/search && perl i
 | 議員一覧・議員ページ | 動く（289人） |
 | 住所→選挙区→議員 | 動く（`/jusho/`） |
 | 郵便番号・政令市の区→選挙区 | 索引を作る（`scripts-jp/build_area_index.py`）。デモで動作確認済み |
-| 投票記録 | 参議院のみ取り込む（`scripts-jp/sangiin_votes.py`）。TWFY本体の divisions への接続は未 |
+| 投票記録 | 参議院のみ。採決一覧 `/divisions/?house=lords`・採決ごとの賛否 `/divisions/pw-<日付>-<番号>-lords`・議員ごとの `/mp/<id>/recent` に出る |
 
 **英国固有の概念への対応。** `MP` が147ファイル、`constituency` 42、`postcode` 33 に
 埋まっている。画面の入口は「郵便番号から自分の議員を引く」。日本には
@@ -100,6 +100,10 @@ docker compose exec -T -e TWFY_CJK_NGRAM=1 twfy sh -c "cd /twfy/search && perl i
 **投票記録は参議院だけ。** 参議院は本会議の採決を押しボタンで行い、議員別の賛否を公式サイトに
 載せている（`scripts-jp/sangiin_votes.py`。第221回国会の120件で、全件の議員別票数が投票総数と一致）。
 衆議院は起立採決がほとんどで、議員ごとの賛否が記録に残らない。
+本体の画面に出すには、投票した参議院議員全員を people.json に足し（`add_sangiin_members.py`。発言から作った短い所属は1本にまとめる。
+重なると一覧に同じ人が2回出る）、`load_sangiin_divisions.py` の SQL を流す。採決IDは本体と同じ `pw-` 始まりにする
+（`conf/httpd.conf` の書き換えが `pw-`/`pbc-` しか通さず、独自の接頭辞だと採決ページが404になった）。
+採決画面の見出しの一部（"Division number" "Members of the House of Lords"）はテンプレート直書きで英語のまま。
 
 院の割り当ては、画面側が `HOUSE_TYPE_COMMONS`(=1) を147ファイルで直に使っているため、
 **衆議院を 1、参議院を 2** に当てている。別番号だと議員一覧が空になる（実測）。

@@ -46,6 +46,14 @@ GIIN_DB=/path/to/giin.sqlite /usr/bin/python3 scripts-jp/build_area_index.py \
 # 10. 参議院の本会議投票（議員別の賛否）
 /usr/bin/python3 scripts-jp/sangiin_votes.py --session 221 --sqlite twfy_demo.sqlite
 #    「!! 投票総数と議員別が合わない」が1件でも出たら、画面の区切りが変わっている
+
+# 11. 投票した参議院議員を名簿に足して読み直す（所属が重なると一覧に同じ人が2回出る）
+/usr/bin/python3 scripts-jp/add_sangiin_members.py --votes-db twfy_demo.sqlite
+docker compose exec -T twfy sh -c "cd /twfy/scripts && ./load-people"
+
+# 12. 採決を本体の divisions に入れる。**採決IDは pw- 始まり**（それ以外は /divisions/<ID> が404）
+/usr/bin/python3 scripts-jp/load_sangiin_divisions.py --votes-db twfy_demo.sqlite > /tmp/sangiin.sql
+docker compose exec -T mariadb mariadb -utwfy -ppassword twfy < /tmp/sangiin.sql
 ```
 
 ## 確認（ここまでやって初めて「動いた」と言う）
@@ -54,6 +62,8 @@ GIIN_DB=/path/to/giin.sqlite /usr/bin/python3 scripts-jp/build_area_index.py \
 curl -s "http://127.0.0.1:<PORT>/search/?q=%E6%B2%96%E7%B8%84" | grep -c 沖縄   # 1以上
 curl -s "http://127.0.0.1:<PORT>/mps/" | grep -c "区"                          # 議員一覧
 curl -s "http://127.0.0.1:<PORT>/jusho/?q=%E8%8C%82%E5%8E%9F%E5%B8%82"          # 千葉11区が出る
+curl -s "http://127.0.0.1:<PORT>/jusho/?q=467-0853" | grep -c 愛知4区            # 1以上
+curl -s "http://127.0.0.1:<PORT>/divisions/pw-2026-07-24-1-lords" | grep -c 日本共産党  # 反対した会派が出る
 ```
 
 ## 必ず踏む落とし穴（READMEの理由も読むこと）
