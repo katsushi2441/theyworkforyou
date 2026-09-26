@@ -16,6 +16,10 @@
 区そのものが2つの選挙区にまたがるのは全国で7区だけ（札幌市西区・北区・白石区、浜松市中央区、
 福岡市東区・南区・城南区）。そこは候補を並べて選んでもらう。
 
+    # 本体（/jusho/ が読む）
+    GIIN_DB=/path/to/giin.sqlite python3 scripts-jp/build_area_index.py \
+        --ken-all data/jp/utf_ken_all.csv --area-json data/jp/area.json --postal-dir data/jp/postal
+    # PHP1枚のデモ（SQLite）
     GIIN_DB=/path/to/giin.sqlite python3 scripts-jp/build_area_index.py \
         --ken-all data/jp/utf_ken_all.csv --area-json twfy_area.json --sqlite twfy_demo.sqlite
 """
@@ -25,7 +29,8 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--giin-db", default=os.environ.get("GIIN_DB", "data/giin.sqlite"))
 ap.add_argument("--ken-all", required=True)
 ap.add_argument("--area-json", required=True)
-ap.add_argument("--sqlite")
+ap.add_argument("--sqlite", help="デモ用: postal テーブルを足す SQLite")
+ap.add_argument("--postal-dir", help="本体用: 郵便番号の上3桁ごとの JSON（data/jp/postal/NNN.json）を出す")
 a = ap.parse_args()
 
 def norm(s):
@@ -95,6 +100,18 @@ print(f"区域: 市区町村 {munis} / 複数の選挙区にまたがる {split}
 print(f"郵便番号: 対応 {len(rows)} 件 / 区域データに無い市区町村名 {len(miss)} 種")
 for (p, n), c in miss.most_common(15):
     print("   未対応", p, n, c)
+
+if a.postal_dir:
+    # 本体（/jusho/）は MariaDB に表を足さずに済むよう、上3桁で割ったJSONを1枚だけ読む。
+    # 12万件を1枚にすると1リクエストごとに数MBを読むことになる。
+    os.makedirs(a.postal_dir, exist_ok=True)
+    shards = collections.defaultdict(dict)
+    for z, st in rows.items():
+        shards[z[:3]][z] = [list(x) for x in sorted(st)]
+    for k, v in shards.items():
+        json.dump(v, open(os.path.join(a.postal_dir, k + ".json"), "w", encoding="utf-8"),
+                  ensure_ascii=False, separators=(",", ":"))
+    print("postal-dir:", len(shards), "枚 →", a.postal_dir)
 
 if a.sqlite:
     db = sqlite3.connect(a.sqlite)
