@@ -1,0 +1,3615 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-01 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: classes/AlertView/Standard.php:444 www/docs/user/login/index.php:34
+#: www/docs/user/password/index.php:33
+msgid "Please enter your email address"
+msgstr "メールアドレスを入力してください"
+
+#. validate_email() is in includes/utilities.php
+#: classes/AlertView/Standard.php:447 www/docs/user/login/index.php:36
+#: www/docs/user/password/index.php:35
+msgid "Please enter a valid email address"
+msgstr "有効なメールアドレスを入力してください。"
+
+#: classes/AlertView/Standard.php:463
+msgid "Please enter what you want to be alerted about"
+msgstr "通知を受け取る内容を入力してください。"
+
+#: classes/AlertView/Standard.php:467
+msgid ""
+"You probably don&rsquo;t want a date range as part of your criteria, as you "
+"won&rsquo;t be alerted to anything new!"
+msgstr ""
+
+#: classes/AlertView/Standard.php:472
+#, php-format
+msgid "That search appears to be invalid - %s - please check and try again."
+msgstr "その検索は無効です - %s - 内容を確認してやり直してください。"
+
+#: classes/AlertView/Standard.php:476
+msgid ""
+"That search is too long for our database; please split it up into multiple "
+"smaller alerts."
+msgstr ""
+
+#: classes/AlertView/Standard.php:527 classes/AlertView/Standard.php:545
+msgid "No matching representative found"
+msgstr "該当する国会議員は見つかりませんでした。"
+
+#: classes/AlertView/Standard.php:547
+msgid "Multiple matching representatives found, please select one."
+msgstr "一致する国会議員が複数見つかりました。一つ選択してください。"
+
+#: classes/Divisions.php:484
+#, php-format
+msgid "voted %s"
+msgstr "%sに投票"
+
+#: classes/Divisions.php:486
+#, php-format
+msgid "voted %s on <em>%s</em>"
+msgstr "<em>%s</em>に対し%s票を投じた"
+
+#: classes/GlossaryView/AddTermView.php:13
+#: classes/GlossaryView/EditTermView.php:13
+msgid "You don't have permission to manage the glossary"
+msgstr "用語集を管理する権限がありません。"
+
+#: classes/Homepage.php:74 classes/SectionView/NiView.php:119
+#: classes/SectionView/SeneddView.php:125 classes/SPHomepage.php:33
+msgid "Subscribe to our newsletter"
+msgstr "ニュースレターを購読する"
+
+#: classes/Member.php:373 classes/Member.php:385
+#: www/includes/easyparliament/member.php:34
+#: www/includes/easyparliament/templates/html/divisions/index.php:63
+msgid "House of Lords"
+msgstr "参議院"
+
+#: classes/Member.php:377
+#, php-format
+msgid "Previously MP for %s until %s"
+msgstr ""
+
+#: classes/Member.php:393 classes/Member.php:397
+#: www/includes/easyparliament/member.php:33
+#: www/includes/easyparliament/templates/html/divisions/index.php:62
+msgid "House of Commons"
+msgstr "庶民院"
+
+#: classes/Member.php:400 classes/Member.php:401
+msgid "Assembly"
+msgstr "議会"
+
+#: classes/Member.php:402 classes/Member.php:403
+#: www/includes/easyparliament/hansardlist.php:1227
+#: www/includes/easyparliament/member.php:36
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:62
+#: www/includes/easyparliament/templates/html/divisions/index.php:65
+#: www/includes/easyparliament/templates/html/search/form_options.php:68
+msgid "Scottish Parliament"
+msgstr "スコットランド議会"
+
+#: classes/Member.php:404 classes/Member.php:405
+#: www/includes/easyparliament/member.php:37
+#: www/includes/easyparliament/templates/html/divisions/index.php:66
+msgid "Senedd"
+msgstr "ウェールズ議会"
+
+#: classes/Member.php:406 classes/Member.php:407
+#: www/includes/easyparliament/member.php:38
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:70
+#: www/includes/easyparliament/templates/html/search/form_options.php:76
+msgid "London Assembly"
+msgstr "ロンドン議会"
+
+#: classes/Member.php:417
+#, php-format
+msgid "Entered the %s in %s"
+msgstr "%sに%sを入力しました"
+
+#: classes/Member.php:419
+#, php-format
+msgid "Entered the %s on %s"
+msgstr "%sに%sで入庁しました"
+
+#: classes/Member.php:433
+#, php-format
+msgid "Left the %s in %s"
+msgstr "%sの%sを離脱しました"
+
+#: classes/Member.php:435
+#, php-format
+msgid "Left the %s on %s"
+msgstr "%sを%sに残しました"
+
+#: classes/People.php:93
+#, php-format
+msgid "%s, as on %s"
+msgstr "%s（%s時点）"
+
+#: classes/People.php:95
+#, php-format
+msgid "All %s, including former ones"
+msgstr "元を含むすべての%s"
+
+#: classes/People.php:97
+#: www/includes/easyparliament/templates/html/people/index.php:141
+#, php-format
+msgid "All %s"
+msgstr "すべての%s"
+
+#: classes/People.php:102
+msgid "Person ID"
+msgstr "個人ID"
+
+#: classes/People.php:102
+#: www/includes/easyparliament/templates/html/people/index.php:160
+#: www/includes/easyparliament/templates/html/user/index.php:34
+#: www/includes/easyparliament/templates/html/user/view_user.php:5
+msgid "Name"
+msgstr "氏名"
+
+#: classes/People.php:102
+#: www/includes/easyparliament/templates/html/people/index.php:147
+#: www/includes/easyparliament/templates/html/people/index.php:153
+#: www/includes/easyparliament/templates/html/people/index.php:163
+msgid "Party"
+msgstr "政党"
+
+#: classes/People.php:102
+msgid "Constituency"
+msgstr "選挙区"
+
+#: classes/People.php:102
+msgid "URI"
+msgstr "URI"
+
+#: classes/Renderer/Header.php:117
+msgid ""
+"Making it easy to keep an eye on the UK’s parliaments. Discover who "
+"represents you, how they’ve voted and what they’ve said in debates."
+msgstr ""
+
+#: classes/Renderer/Header.php:252 classes/Renderer/Header.php:268
+#: classes/Renderer/Header.php:289
+msgid "Wales"
+msgstr "ウェールズ"
+
+#: classes/Search.php:73
+msgid ""
+"You cannot search for just a date range, please select some other criteria "
+"as well."
+msgstr ""
+
+#: classes/Search.php:76
+msgid "You cannot search for more than one date range."
+msgstr "複数の日付範囲を検索することはできません。"
+
+#: classes/Search.php:79
+msgid "Maximum term length is 255 characters."
+msgstr "最大文字数は255文字です。"
+
+#: classes/SectionView/SeneddView.php:111
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:67
+#: www/includes/easyparliament/templates/html/search/form_options.php:73
+msgid "Senedd / Welsh Parliament"
+msgstr "セネド／ウェールズ議会"
+
+#: classes/SectionView/SeneddView.php:122
+#, php-format
+msgid "Find out more about your MSs for %s and %s"
+msgstr "%s と %s の国会議員に関する詳細を確認する"
+
+#: classes/SectionView/SeneddView.php:124
+msgid "Create and manage email alerts"
+msgstr "メールアラートの作成と管理"
+
+#: classes/SectionView/SeneddView.php:126
+msgid "Donate to support our work"
+msgstr "私たちの活動を支援するための寄付をお願いします。"
+
+#: classes/SectionView/SeneddView.php:127
+msgid "Learn more about TheyWorkForYou"
+msgstr "TheyWorkForYouの詳細を見る"
+
+#: classes/User.php:201
+msgid "Please enter a password"
+msgstr "パスワードを入力してください"
+
+#: classes/User.php:204 classes/User.php:220
+msgid "Please enter at least six characters"
+msgstr "6文字以上入力してください。"
+
+#: classes/User.php:208
+msgid "Please enter a password again"
+msgstr "パスワードを再入力してください。"
+
+#: classes/User.php:212 classes/User.php:224
+msgid "The passwords did not match. Please try again."
+msgstr "パスワードが一致しません。もう一度お試しください。"
+
+#: classes/User.php:232
+msgid "Sorry, this isn't a valid UK postcode."
+msgstr "申し訳ありません。これは有効な英国の住所ではありません。"
+
+#: classes/User.php:240
+msgid "Sorry, we could not find an MP for that postcode."
+msgstr "申し訳ございませんが、その住所に対応する国会議員は見つかりませんでした。"
+
+#: classes/Utility/Alert.php:14
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:50
+#: www/includes/easyparliament/templates/html/search/form_options.php:56
+msgid "All UK"
+msgstr "英国全域"
+
+#: classes/Utility/Alert.php:15
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:51
+#: www/includes/easyparliament/templates/html/search/form_options.php:57
+msgid "House of Commons debates"
+msgstr "庶民院の会議録"
+
+#: classes/Utility/Alert.php:16 scripts/alertmailer.php:153
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:52
+#: www/includes/easyparliament/templates/html/search/form_options.php:58
+msgid "Westminster Hall debates"
+msgstr "ウェストミンスター・ホールでの会議録"
+
+#: classes/Utility/Alert.php:17
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:53
+#: www/includes/easyparliament/templates/html/search/form_options.php:59
+msgid "House of Lords debates"
+msgstr "参議院議員の会議録"
+
+#: classes/Utility/Alert.php:18
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:54
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:65
+#: www/includes/easyparliament/templates/html/search/form_options.php:60
+#: www/includes/easyparliament/templates/html/search/form_options.php:71
+msgid "Written answers"
+msgstr "答弁書"
+
+#: classes/Utility/Alert.php:19
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:55
+#: www/includes/easyparliament/templates/html/search/form_options.php:61
+msgid "Written ministerial statements"
+msgstr "大臣の書面による声明"
+
+#: classes/Utility/Alert.php:20
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:56
+#: www/includes/easyparliament/templates/html/search/form_options.php:62
+msgid "Bill Committees"
+msgstr "法案委員会"
+
+#: classes/Utility/Alert.php:21
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:57
+#: www/includes/easyparliament/templates/html/search/form_options.php:63
+msgid "Future Business"
+msgstr "今後の予定"
+
+#: classes/Utility/Alert.php:22
+msgid "Northern Ireland Assembly Debates"
+msgstr "北アイルランド議会会議録"
+
+#: classes/Utility/Alert.php:23
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:63
+#: www/includes/easyparliament/templates/html/search/form_options.php:69
+msgid "All Scotland"
+msgstr "スコットランド全域"
+
+#: classes/Utility/Alert.php:24
+msgid "Scottish Parliament Debates"
+msgstr "スコットランド議会の会議録"
+
+#: classes/Utility/Alert.php:25
+msgid "Scottish Parliament Written answers"
+msgstr "スコットランド議会 答弁書"
+
+#: classes/Utility/Alert.php:26
+msgid "Welsh parliament record"
+msgstr "ウェールズ議会会議録"
+
+#: classes/Utility/Alert.php:27
+msgid "Questions to the Mayor of London"
+msgstr "ロンドン市長への質問"
+
+#: classes/Utility/Alert.php:67
+#, php-format
+msgid "+ %d more keyword"
+msgid_plural "+ %d more keywords"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/Utility/House.php:43
+msgid "MS"
+msgstr "MS"
+
+#: classes/Utility/House.php:44 www/includes/easyparliament/metadata.php:1158
+msgid "MSs"
+msgstr "参議院議員"
+
+#: locale/welsh-constituencies.php:3
+msgid "Aberavon"
+msgstr "アベヴォン"
+
+#: locale/welsh-constituencies.php:4
+msgid "Aberconwy"
+msgstr "アバーコンウィー"
+
+#: locale/welsh-constituencies.php:5
+msgid "Alyn and Deeside"
+msgstr "アリン・アンド・ディサイド"
+
+#: locale/welsh-constituencies.php:6
+msgid "Arfon"
+msgstr "アルフォン"
+
+#: locale/welsh-constituencies.php:7
+msgid "Blaenau Gwent"
+msgstr "ブレナウ・グウェント"
+
+#: locale/welsh-constituencies.php:8
+msgid "Brecon and Radnorshire"
+msgstr "ブレコン・アンド・ラドノシャー"
+
+#: locale/welsh-constituencies.php:9
+msgid "Bridgend"
+msgstr "ブリッジンド"
+
+#: locale/welsh-constituencies.php:10
+msgid "Caerphilly"
+msgstr ""
+
+#: locale/welsh-constituencies.php:11
+msgid "Cardiff Central"
+msgstr "カーディフ中央"
+
+#: locale/welsh-constituencies.php:12
+msgid "Cardiff North"
+msgstr "カーディフ北dist"
+
+#: locale/welsh-constituencies.php:13
+msgid "Cardiff South and Penarth"
+msgstr "カーディフ・サウスおよびペナース"
+
+#: locale/welsh-constituencies.php:14
+msgid "Cardiff West"
+msgstr "カーディフ・ウェスト"
+
+#: locale/welsh-constituencies.php:15
+msgid "Carmarthen East and Dinefwr"
+msgstr "カーマーゼン東部およびディネフル"
+
+#: locale/welsh-constituencies.php:16
+msgid "Carmarthen West and South Pembrokeshire"
+msgstr "カーマーゼン西および南ペンブルックシャー"
+
+#: locale/welsh-constituencies.php:17
+msgid "Ceredigion"
+msgstr "ケレディニオン"
+
+#: locale/welsh-constituencies.php:18
+msgid "Clwyd South"
+msgstr "クルウィド南"
+
+#: locale/welsh-constituencies.php:19
+msgid "Clwyd West"
+msgstr "クルウィド西選出"
+
+#: locale/welsh-constituencies.php:20
+msgid "Cynon Valley"
+msgstr "シノン・バレー"
+
+#: locale/welsh-constituencies.php:21
+msgid "Delyn"
+msgstr "デリン"
+
+#: locale/welsh-constituencies.php:22
+msgid "Dwyfor Meirionnydd"
+msgstr "ドゥイフォー・メイリオニディス"
+
+#: locale/welsh-constituencies.php:23
+msgid "Gower"
+msgstr "ガワー"
+
+#: locale/welsh-constituencies.php:24
+msgid "Islwyn"
+msgstr "イスウィン"
+
+#: locale/welsh-constituencies.php:25
+msgid "Llanelli"
+msgstr "ラネリ"
+
+#: locale/welsh-constituencies.php:26
+msgid "Merthyr Tydfil and Rhymney"
+msgstr "メルスィル・ティドフィルおよびライムニー"
+
+#: locale/welsh-constituencies.php:27
+msgid "Monmouth"
+msgstr "モンマス"
+
+#: locale/welsh-constituencies.php:28
+msgid "Montgomeryshire"
+msgstr "モンゴメリーシャー"
+
+#: locale/welsh-constituencies.php:29
+msgid "Neath"
+msgstr "ネアズ"
+
+#: locale/welsh-constituencies.php:30
+msgid "Newport East"
+msgstr "ニューポート・イースト"
+
+#: locale/welsh-constituencies.php:31
+msgid "Newport West"
+msgstr "ニューポート・ウェスト"
+
+#: locale/welsh-constituencies.php:32
+msgid "Ogmore"
+msgstr "オグモア"
+
+#: locale/welsh-constituencies.php:33
+msgid "Pontypridd"
+msgstr "ポンティプリッド"
+
+#: locale/welsh-constituencies.php:34
+msgid "Preseli Pembrokeshire"
+msgstr "プレセリ・ペンブルックシャー"
+
+#: locale/welsh-constituencies.php:35
+msgid "Rhondda"
+msgstr "ロンダ"
+
+#: locale/welsh-constituencies.php:36
+msgid "Swansea East"
+msgstr "スウォンジー東部"
+
+#: locale/welsh-constituencies.php:37
+msgid "Swansea West"
+msgstr "スウォンジー西選挙区"
+
+#: locale/welsh-constituencies.php:38
+msgid "Torfaen"
+msgstr "トルファエン"
+
+#: locale/welsh-constituencies.php:39
+msgid "Vale of Clwyd"
+msgstr "クルウィド渓谷"
+
+#: locale/welsh-constituencies.php:40
+msgid "Vale of Glamorgan"
+msgstr "グラモルガン渓谷"
+
+#: locale/welsh-constituencies.php:41
+msgid "Wrexham"
+msgstr "レクセンハム"
+
+#: locale/welsh-constituencies.php:42
+msgid "Ynys Môn"
+msgstr "ウィニス・モン"
+
+#: locale/welsh-constituencies.php:43
+msgid "Mid and West Wales"
+msgstr "ミッド・アンド・ウエスト・ウェールズ"
+
+#: locale/welsh-constituencies.php:44
+msgid "North Wales"
+msgstr "北ウェールズ"
+
+#: locale/welsh-constituencies.php:45
+msgid "South Wales Central"
+msgstr "南ウェールズ中央"
+
+#: locale/welsh-constituencies.php:46
+msgid "South Wales East"
+msgstr "南ウェールズ東部"
+
+#: locale/welsh-constituencies.php:47
+msgid "South Wales West"
+msgstr "南ウェールズ西部"
+
+#: locale/welsh-parties.php:3
+msgid "Conservative"
+msgstr "保守党"
+
+#: locale/welsh-parties.php:4
+msgid "Independent"
+msgstr "独立"
+
+#: locale/welsh-parties.php:5
+msgid "Labour"
+msgstr "労働党"
+
+#: locale/welsh-parties.php:6
+msgid "Liberal Democrat"
+msgstr "自由民主党"
+
+#: locale/welsh-parties.php:7
+msgid "Plaid Cymru"
+msgstr "プライド・クムル"
+
+#: scripts/alertmailer.php:136
+msgid "Commons debate"
+msgstr "下院の会議録"
+
+#: scripts/alertmailer.php:137
+msgid "Westminster Hall debate"
+msgstr "ウェストミンスター・ホールでの会議録"
+
+#: scripts/alertmailer.php:138
+msgid "Written Answer"
+msgstr "答弁書"
+
+#: scripts/alertmailer.php:139
+msgid "Written Ministerial Statement"
+msgstr "大臣声明（答弁書）"
+
+#: scripts/alertmailer.php:140
+msgid "Northern Ireland Assembly debate"
+msgstr "北アイルランド議会会議録"
+
+#: scripts/alertmailer.php:141
+msgid "Public Bill committee"
+msgstr "公聴委員会"
+
+#: scripts/alertmailer.php:142
+msgid "Scottish Parliament debate"
+msgstr "スコットランド議会の会議録"
+
+#: scripts/alertmailer.php:143
+msgid "Scottish Parliament written answer"
+msgstr "スコットランド議会答弁書"
+
+#: scripts/alertmailer.php:144
+msgid "London Mayoral question"
+msgstr "ロンドン市長への質問"
+
+#: scripts/alertmailer.php:145 scripts/alertmailer.php:146
+msgid "Senedd debate"
+msgstr "ウェールズ議会会議録"
+
+#: scripts/alertmailer.php:147
+msgid "Lords debate"
+msgstr "参議院議員の会議録"
+
+#: scripts/alertmailer.php:148
+msgid "event"
+msgstr "イベント"
+
+#: scripts/alertmailer.php:149
+msgid "vote"
+msgstr "採決"
+
+#: scripts/alertmailer.php:152
+msgid "Commons debates"
+msgstr "下院の会議録"
+
+#: scripts/alertmailer.php:154
+msgid "Written Answers"
+msgstr "答弁書"
+
+#: scripts/alertmailer.php:155
+msgid "Written Ministerial Statements"
+msgstr "大臣の書面による声明"
+
+#: scripts/alertmailer.php:156
+msgid "Northern Ireland Assembly debates"
+msgstr "北アイルランド議会の会議録"
+
+#: scripts/alertmailer.php:157
+#: www/includes/easyparliament/templates/html/divisions/index.php:64
+msgid "Public Bill committees"
+msgstr "公聴委員会"
+
+#: scripts/alertmailer.php:158
+msgid "Scottish Parliament debates"
+msgstr "スコットランド議会の会議録"
+
+#: scripts/alertmailer.php:159
+msgid "Scottish Parliament written answers"
+msgstr "スコットランド議会の答弁書"
+
+#: scripts/alertmailer.php:160
+msgid "London Mayoral questions"
+msgstr "ロンドン市長への質問"
+
+#: scripts/alertmailer.php:161 scripts/alertmailer.php:162
+#: www/includes/easyparliament/metadata.php:1217
+#: www/includes/easyparliament/metadata.php:1220
+msgid "Senedd debates"
+msgstr "ウェールズ議会会議録"
+
+#: scripts/alertmailer.php:163
+msgid "Lords debates"
+msgstr "参議院議員の会議録"
+
+#: scripts/alertmailer.php:164
+msgid "events"
+msgstr "イベント"
+
+#: scripts/alertmailer.php:165
+msgid "votes"
+msgstr "採決"
+
+#: scripts/alertmailer.php:304
+msgid "as a teller"
+msgstr "採決係として"
+
+#: scripts/alertmailer.php:315
+msgid "Voted aye"
+msgstr "賛成と投票"
+
+#: scripts/alertmailer.php:317
+msgid "Voted no"
+msgstr "反対票を投じた"
+
+#: scripts/alertmailer.php:319
+msgid "Voted abstain"
+msgstr "棄権で投票"
+
+#: scripts/alertmailer.php:321
+#, php-format
+msgid "Voted %s"
+msgstr "%sの賛成・反対"
+
+#: scripts/alertmailer.php:323
+#, php-format
+msgid "(division #%s; result was <b>%s</b> aye, <b>%s</b> no)"
+msgstr "（採決 #%s；結果は賛成 <b>%s</b>、反対 <b>%s</b>）"
+
+#: scripts/alertmailer.php:403 scripts/alertmailer.php:410
+msgid "There are more results than we have shown here."
+msgstr "ここに表示されている以上の結果があります。"
+
+#: scripts/alertmailer.php:403 scripts/alertmailer.php:410
+msgid "See more"
+msgstr "詳細を見る"
+
+#: www/docs/alert/index.php:11
+#: www/includes/easyparliament/templates/html/alert/index.php:266
+msgid "Email Alerts"
+msgstr "メール通知"
+
+#: www/docs/freeourbills/sharethis.php:67
+msgid "E-mail this, post to del.icio.us, etc."
+msgstr "これをメールで送信する、del.icio.usに投稿するなど。"
+
+#: www/docs/freeourbills/sharethis.php:68
+msgid "Share this"
+msgstr "これを共有する"
+
+#. * @var MySociety\TheyWorkForYou\DataClass\Regmem\Person $register
+#: www/docs/interests/category.php:96
+#: www/includes/easyparliament/metadata.php:119
+#: www/includes/easyparliament/metadata.php:120
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:130
+#: www/includes/easyparliament/templates/html/mp/register.php:62
+msgid "Register of Interests"
+msgstr "利害関係の登録"
+
+#: www/docs/mp/index.php:202
+msgid "Sorry, but we can’t tell which representative to display."
+msgstr "申し訳ございませんが、どの国会議員を表示すべきか特定できません。"
+
+#: www/docs/mp/index.php:205
+msgid "You haven’t provided a way of identifying which representative you want"
+msgstr "どの国会議員を特定するか指定されていません。"
+
+#: www/docs/mp/index.php:557
+#, php-format
+msgid "Sorry, %s isn’t a valid postcode"
+msgstr "申し訳ありません。%sは有効な住所ではありません。"
+
+#: www/docs/mp/index.php:562
+msgid ""
+"Sorry, we couldn’t check your postcode right now, as our postcode lookup "
+"server is under quite a lot of load."
+msgstr ""
+
+#: www/docs/mp/index.php:565
+#, php-format
+msgid "Sorry, %s isn’t a known postcode"
+msgstr "申し訳ありませんが、%s は正しい住所ではありません。"
+
+#: www/docs/mp/index.php:741
+msgid "<abbr title=\"Member of Parliament\">MP</abbr>"
+msgstr "<abbr title=\"国会議員\">MP</abbr>"
+
+#: www/docs/mp/index.php:743
+msgid "<abbr title=\"Member of the Legislative Assembly\">MLA</abbr>"
+msgstr "<abbr title=\"州議会議員\">MLA</abbr>"
+
+#: www/docs/mp/index.php:745
+msgid "<abbr title=\"Member of the Scottish Parliament\">MSP</abbr>"
+msgstr "<abbr title=\"スコットランド議会議員\">MSP</abbr>"
+
+#: www/docs/mp/index.php:747
+msgid "<abbr title=\"Member of the Senedd\">MS</abbr>"
+msgstr "<abbr title=\"国会議員\">MS</abbr>"
+
+#: www/docs/mp/index.php:749
+msgid "Member of the London Assembly"
+msgstr "ロンドン議会議員"
+
+#: www/docs/mp/index.php:762
+#, php-format
+msgid "%s, and %s %s for %s"
+msgstr "%s、および%s %sの%s用"
+
+#: www/docs/mp/index.php:764
+#, php-format
+msgid "Former %s, and %s %s for %s"
+msgstr "元%s、および%s %s（%s）"
+
+#: www/docs/mp/index.php:767
+#, php-format
+msgid "%s %s %s for %s"
+msgstr "%s %s %s（%s）"
+
+#: www/docs/mp/index.php:769
+#, php-format
+msgid "Former %s %s %s for %s"
+msgstr "%s %s %s（%s選出）の元職"
+
+#: www/docs/mp/index.php:773
+#, php-format
+msgid "%s Peer"
+msgstr "%s 参議院議員"
+
+#: www/docs/mp/index.php:775
+#, php-format
+msgid "Former %s Peer"
+msgstr "元%s参議院議員"
+
+#: www/docs/mp/index.php:781
+#, php-format
+msgid "Former %s"
+msgstr "前職の%s"
+
+#: www/docs/mp/index.php:896
+#, php-format
+msgid "More of %s’s recent appearances"
+msgstr "%sの最近の活動の続き"
+
+#: www/docs/mp/index.php:902
+#, php-format
+msgid "More of %s's speeches and debates"
+msgstr "%sの会議録と演説の続き"
+
+#: www/docs/mp/index.php:907
+#, php-format
+msgid "More of %s's written questions"
+msgstr "%sのその他の答弁書"
+
+#: www/docs/mp/index.php:1285
+#, php-format
+msgid ""
+"You have multiple MSs (Members of the Senedd) who represent you in %s. They "
+"are:"
+msgstr ""
+
+#: www/docs/mp/index.php:1287
+#, php-format
+msgid ""
+"You had multiple MSs (Members of the Senedd) who represented you in %s. They "
+"were:"
+msgstr ""
+
+#: www/docs/postcode/index.php:270
+#, php-format
+msgid "Browse all %s"
+msgstr "すべての%sを閲覧する"
+
+#: www/docs/regmem/index.php:94
+#, php-format
+msgid ""
+"This page shows how %s's entry in the Register of Members' Interests has "
+"changed over time, starting at the most recent and working back to the "
+"earliest we have managed to parse."
+msgstr ""
+
+#: www/docs/regmem/index.php:96
+msgid ""
+"Please be aware that changes in typography/styling at the source might mean "
+"something is marked as changed (ie. removed and added) when it hasn't; sorry "
+"about that, but we do our best with the source material."
+msgstr ""
+
+#: www/docs/regmem/index.php:99
+msgid "Removed"
+msgstr "削除済み"
+
+#: www/docs/regmem/index.php:99
+msgid "Added"
+msgstr "追加済み"
+
+#: www/docs/regmem/index.php:149
+msgid "first entry we have"
+msgstr "最初の項目は以下の通りです。"
+
+#: www/docs/user/login/index.php:39
+msgid "Please enter your password"
+msgstr "パスワードを入力してください"
+
+#: www/docs/user/login/index.php:86
+msgid "Confirmation email resent"
+msgstr "確認メールを再送しました"
+
+#: www/docs/user/login/index.php:87
+#: www/includes/easyparliament/templates/html/user/welcome.php:7
+msgid ""
+"You should receive an email shortly which will contain a link. You will need "
+"to follow that link to confirm your email address before you can log in. "
+"Thanks."
+msgstr ""
+
+#: www/includes/dbtypes.php:137 www/includes/dbtypes.php:149
+msgid "debate"
+msgstr "会議録"
+
+#: www/includes/dbtypes.php:138 www/includes/dbtypes.php:150
+msgid "debates"
+msgstr "会議録"
+
+#: www/includes/easyparliament/alert.php:542
+#, php-format
+msgid "Mentions of [%s]"
+msgstr "[%s]に関する言及"
+
+#: www/includes/easyparliament/alert.php:545
+#, php-format
+msgid "Things by %s"
+msgstr "%sによる事項"
+
+#: www/includes/easyparliament/hansardlist.php:436
+#, php-format
+msgid "Previous %s"
+msgstr "前の%s"
+
+#: www/includes/easyparliament/hansardlist.php:449
+msgid "Previous speaker"
+msgstr "前の発言者"
+
+#: www/includes/easyparliament/hansardlist.php:480
+#, php-format
+msgid "Next %s"
+msgstr "次の%s"
+
+#: www/includes/easyparliament/hansardlist.php:493
+msgid "Next speaker"
+msgstr "次の発言者"
+
+#: www/includes/easyparliament/hansardlist.php:516
+#, php-format
+msgid "All %s on %s"
+msgstr ""
+
+#: www/includes/easyparliament/hansardlist.php:570
+msgid "Next day"
+msgstr "翌日"
+
+#: www/includes/easyparliament/hansardlist.php:572
+msgid "Previous day"
+msgstr "前日"
+
+#: www/includes/easyparliament/hansardlist.php:592
+#, php-format
+msgid "All of %s’s %s"
+msgstr "%sのすべての%s"
+
+#: www/includes/easyparliament/hansardlist.php:878
+msgid "Recent dates"
+msgstr "最近の日付"
+
+#: www/includes/easyparliament/hansardlist.php:1223
+#: www/includes/easyparliament/member.php:35
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:59
+#: www/includes/easyparliament/templates/html/search/form_options.php:65
+msgid "Northern Ireland Assembly"
+msgstr "北アイルランド議会"
+
+#: www/includes/easyparliament/hansardlist.php:1225
+msgid "Public Bill Committee"
+msgstr "公聴委員会"
+
+#: www/includes/easyparliament/hansardlist.php:2463
+msgid "See the whole debate"
+msgstr "会議録の全文を見る"
+
+#: www/includes/easyparliament/member.php:32
+msgid "Royal Family"
+msgstr "王室"
+
+#: www/includes/easyparliament/member.php:45
+msgid "Became peer"
+msgstr "参議院議員に就任"
+
+#: www/includes/easyparliament/member.php:46
+msgid "Byelection"
+msgstr "補欠選挙"
+
+#: www/includes/easyparliament/member.php:47
+msgid "Changed party"
+msgstr "所属政党の変更"
+
+#: www/includes/easyparliament/member.php:48
+msgid "Had whip removed"
+msgstr "党の指示から外れた"
+
+#: www/includes/easyparliament/member.php:49
+msgid "Had whip restored"
+msgstr "党の指示に従う権利を回復した"
+
+#: www/includes/easyparliament/member.php:50
+msgid "Changed name"
+msgstr "名称変更済み"
+
+#: www/includes/easyparliament/member.php:51
+msgid "Declared void"
+msgstr "無効と宣言されました"
+
+#: www/includes/easyparliament/member.php:52
+msgid "Died"
+msgstr "逝去"
+
+#: www/includes/easyparliament/member.php:53
+msgid "Disqualified"
+msgstr "資格剥奪"
+
+#: www/includes/easyparliament/member.php:54
+msgid "General election"
+msgstr "総選挙"
+
+#: www/includes/easyparliament/member.php:55
+msgid "General election (standing again)"
+msgstr "総選挙（再出馬）"
+
+#: www/includes/easyparliament/member.php:55
+msgid "General election (stood again)"
+msgstr "総選挙（再選）"
+
+#: www/includes/easyparliament/member.php:56
+msgid "did not stand for re-election"
+msgstr "再選を志願しなかった"
+
+#: www/includes/easyparliament/member.php:57
+msgid "Reinstated"
+msgstr "復元"
+
+#: www/includes/easyparliament/member.php:58
+msgid "Resigned"
+msgstr "辞任"
+
+#: www/includes/easyparliament/member.php:59
+msgid "Removed from office by a recall petition"
+msgstr "リコール請願により解職"
+
+#: www/includes/easyparliament/member.php:60
+msgid "Still in office"
+msgstr "現職"
+
+#: www/includes/easyparliament/member.php:61
+msgid "Dissolved for election"
+msgstr "解散（総選挙）のため"
+
+#: www/includes/easyparliament/member.php:62
+msgid "Election"
+msgstr "選挙"
+
+#. Scottish Parliament
+#: www/includes/easyparliament/member.php:63
+msgid "Appointed, regional replacement"
+msgstr "任命済み、地域代替案"
+
+#: www/includes/easyparliament/metadata.php:83
+msgid "About us"
+msgstr "私たちについて"
+
+#: www/includes/easyparliament/metadata.php:381
+#: www/includes/easyparliament/metadata.php:384
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: www/includes/easyparliament/metadata.php:388
+msgid "News"
+msgstr "ニュース"
+
+#: www/includes/easyparliament/metadata.php:459
+#: www/includes/easyparliament/metadata.php:460
+#: www/includes/easyparliament/metadata.php:463
+#: www/includes/easyparliament/templates/html/divisions/index.php:5
+#: www/includes/easyparliament/templates/html/homepage/recent-votes.php:3
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:120
+#: www/includes/easyparliament/templates/html/mp/recent.php:22
+msgid "Recent Votes"
+msgstr "最近の採決"
+
+#: www/includes/easyparliament/metadata.php:483
+#: www/includes/easyparliament/metadata.php:486
+msgid "Donate"
+msgstr "寄付する"
+
+#: www/includes/easyparliament/metadata.php:553
+msgid "Help - Frequently Asked Questions"
+msgstr "ヘルプ - よくある質問"
+
+#: www/includes/easyparliament/metadata.php:577
+msgid "Link to us"
+msgstr "お問い合わせ先へのリンク"
+
+#: www/includes/easyparliament/metadata.php:578
+msgid "How to link to us"
+msgstr "お問い合わせへのリンク方法"
+
+#: www/includes/easyparliament/metadata.php:582
+msgid "API"
+msgstr "API"
+
+#: www/includes/easyparliament/metadata.php:583
+msgid "API - Query the TheyWorkForYou database"
+msgstr "API - TheyWorkForYouデータベースの照会"
+
+#: www/includes/easyparliament/metadata.php:587
+msgid "Raw Data"
+msgstr "生データ"
+
+#: www/includes/easyparliament/metadata.php:588
+msgid "Raw data (XML) - the data behind TheyWorkForYou and Public Whip"
+msgstr "生データ（XML） - TheyWorkForYouおよびPublic Whipの基礎となるデータ"
+
+#: www/includes/easyparliament/metadata.php:592
+msgid "Developer mailing list"
+msgstr "開発者用メーリングリスト"
+
+#: www/includes/easyparliament/metadata.php:596
+msgid "Source code"
+msgstr "ソースコード"
+
+#: www/includes/easyparliament/metadata.php:597
+msgid "TheyWorkForYou Source code"
+msgstr "TheyWorkForYou ソースコード"
+
+#: www/includes/easyparliament/metadata.php:832
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+#: www/includes/easyparliament/metadata.php:1097
+msgid "Join"
+msgstr "参加する"
+
+#: www/includes/easyparliament/metadata.php:1098
+msgid "Joining is free and allows you to manage your email alerts"
+msgstr "登録は無料で、メール通知の管理が可能になります。"
+
+#: www/includes/easyparliament/metadata.php:1102
+#: www/includes/easyparliament/templates/html/user/join.php:140
+msgid "Join TheyWorkForYou"
+msgstr "TheyWorkForYouに参加する"
+
+#: www/includes/easyparliament/metadata.php:1107
+msgid "Sign in / Register"
+msgstr "サインイン / 新規登録"
+
+#: www/includes/easyparliament/metadata.php:1108
+msgid "If you've already joined, sign in to your account"
+msgstr "すでに登録済みの場合は、アカウントにサインインしてください。"
+
+#: www/includes/easyparliament/metadata.php:1111
+#: www/includes/easyparliament/page.php:757
+msgid "Sign in"
+msgstr "サインイン"
+
+#: www/includes/easyparliament/metadata.php:1159
+msgid "List of Members of the Senedd (MSs)"
+msgstr "ウェールズ議会議員（MSs）の一覧"
+
+#: www/includes/easyparliament/metadata.php:1167
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:60
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:64
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:68
+#: www/includes/easyparliament/templates/html/search/form_options.php:66
+#: www/includes/easyparliament/templates/html/search/form_options.php:70
+#: www/includes/easyparliament/templates/html/search/form_options.php:74
+msgid "Debates"
+msgstr "会議録"
+
+#: www/includes/easyparliament/metadata.php:1168
+msgid "Debates in the Senedd"
+msgstr "ウェールズ議会の会議録"
+
+#: www/includes/easyparliament/metadata.php:1175
+msgid "Find your MS"
+msgstr "あなたの国会議員を検索"
+
+#: www/includes/easyparliament/metadata.php:1180
+#: www/includes/easyparliament/metadata.php:1185
+msgid "Your MSs"
+msgstr "あなたのMSs"
+
+#: www/includes/easyparliament/metadata.php:1181
+msgid "Find out about your Members of the Senedd"
+msgstr "国会議員について調べる"
+
+#: www/includes/easyparliament/metadata.php:1192
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:12
+msgid "Overview"
+msgstr "概要"
+
+#: www/includes/easyparliament/metadata.php:1193
+msgid "Overview of the Senedd debates"
+msgstr "ウェールズ議会会議録の概要"
+
+#: www/includes/easyparliament/metadata.php:1333
+#: www/includes/easyparliament/metadata.php:1337
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:104
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:134
+msgid "Your MP"
+msgstr "あなたの国会議員"
+
+#: www/includes/easyparliament/metadata.php:1334
+msgid "Find out about your Member of Parliament"
+msgstr "国会議員について調べる"
+
+#: www/includes/easyparliament/page.php:56
+msgid "You’d better sign in!"
+msgstr "サインインしてください。"
+
+#: www/includes/easyparliament/page.php:366
+msgid "Your current postcode:"
+msgstr "現在の住所："
+
+#: www/includes/easyparliament/page.php:366
+msgid "The cookie storing your postcode will be erased"
+msgstr "住所を保存するクッキーは削除されます。"
+
+#: www/includes/easyparliament/page.php:366
+msgid "Forget this postcode"
+msgstr "この住所を削除する"
+
+#: www/includes/easyparliament/page.php:370
+msgid "Enter your UK postcode:"
+msgstr "英国の住所を入力してください："
+
+#: www/includes/easyparliament/page.php:372
+#: www/includes/easyparliament/page.php:815
+msgid "GO"
+msgstr "次へ"
+
+#: www/includes/easyparliament/page.php:372
+msgid "(e.g. BS3 1QP)"
+msgstr "（例：BS3 1QP）"
+
+#: www/includes/easyparliament/page.php:573
+msgid "Remove highlighting"
+msgstr "ハイライトを解除"
+
+#: www/includes/easyparliament/page.php:641
+msgid "Modify search"
+msgstr "検索条件の変更"
+
+#. skip heading count for WTT lords list
+#. no $pid
+#. end of isset($speakers)
+#: www/includes/easyparliament/page.php:641
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:89
+#: www/includes/easyparliament/templates/html/header.php:161
+#: www/includes/easyparliament/templates/html/mp/header.php:72
+#: www/includes/easyparliament/templates/html/search/form_main.php:5
+#: www/includes/easyparliament/templates/html/search/form_options.php:96
+#: www/includes/easyparliament/templates/html/section/_search.php:10
+msgid "Search"
+msgstr "検索"
+
+#: www/includes/easyparliament/page.php:644
+msgid "More&nbsp;options"
+msgstr "その他のオプション"
+
+#: www/includes/easyparliament/page.php:666
+#: www/includes/easyparliament/templates/html/search/results.php:86
+msgid "Sorted by relevance"
+msgstr "関連度順"
+
+#: www/includes/easyparliament/page.php:668
+#, php-format
+msgid "<a href='%s'>Sort by relevance</a>"
+msgstr "<a href='%s'>関連度で並べ替え</a>"
+
+#: www/includes/easyparliament/page.php:673
+#: www/includes/easyparliament/page.php:675
+msgid "Sorted by date:"
+msgstr "日付順："
+
+#: www/includes/easyparliament/page.php:673
+#: www/includes/easyparliament/page.php:675
+#: www/includes/easyparliament/page.php:679
+#: www/includes/easyparliament/templates/html/search/results.php:87
+#: www/includes/easyparliament/templates/html/search/results.php:90
+#: www/includes/easyparliament/templates/html/search/results.php:93
+msgid "newest"
+msgstr "最新"
+
+#: www/includes/easyparliament/page.php:673
+#: www/includes/easyparliament/page.php:675
+#: www/includes/easyparliament/page.php:682
+#: www/includes/easyparliament/templates/html/search/results.php:87
+#: www/includes/easyparliament/templates/html/search/results.php:90
+#: www/includes/easyparliament/templates/html/search/results.php:93
+msgid "oldest"
+msgstr "最古の"
+
+#: www/includes/easyparliament/page.php:677
+msgid "Sort by date:"
+msgstr "日付順に並べ替え："
+
+#: www/includes/easyparliament/page.php:688
+msgid "Use by person"
+msgstr "個人による使用"
+
+#: www/includes/easyparliament/page.php:691
+msgid "Show use by person"
+msgstr "個人別の使用状況を表示"
+
+#: www/includes/easyparliament/page.php:698
+#, php-format
+msgid "Search only %s"
+msgstr "%sのみを検索"
+
+#: www/includes/easyparliament/page.php:699
+#: www/includes/easyparliament/templates/html/search/form_main.php:15
+msgid "Search all speeches"
+msgstr "すべての演説を検索"
+
+#: www/includes/easyparliament/page.php:725
+#: www/includes/easyparliament/templates/html/user/form.php:73
+#: www/includes/easyparliament/templates/html/user/join.php:55
+msgid "Email address:"
+msgstr "メールアドレス："
+
+#: www/includes/easyparliament/page.php:738
+#: www/includes/easyparliament/templates/html/user/form.php:87
+#: www/includes/easyparliament/templates/html/user/join.php:66
+msgid "Password:"
+msgstr "パスワード："
+
+#: www/includes/easyparliament/page.php:753
+msgid "Keep me signed in on this device"
+msgstr "このデバイスでサインインしたままにする"
+
+#: www/includes/easyparliament/page.php:759
+msgid "Forgotten Password?"
+msgstr "パスワードを忘れた場合"
+
+#: www/includes/easyparliament/page.php:782
+msgid "New to TheyWorkForYou?"
+msgstr "TheyWorkForYouを初めてご利用ですか？"
+
+#: www/includes/easyparliament/page.php:795
+msgid "Create Free Account"
+msgstr "無料アカウントを作成"
+
+#. Display everything.
+#: www/includes/easyparliament/page.php:935
+msgid "Result page:"
+msgstr "結果ページ："
+
+#: www/includes/easyparliament/page.php:942
+msgid "Previous"
+msgstr "前へ"
+
+#: www/includes/easyparliament/page.php:953
+msgid "Next"
+msgstr "次へ"
+
+#: www/includes/easyparliament/searchengine.php:309
+#, php-format
+msgid "in the '%s'"
+msgstr "%s」内で"
+
+#: www/includes/easyparliament/searchengine.php:311
+msgid "in Future Business"
+msgstr "今後の予定"
+
+#: www/includes/easyparliament/searchengine.php:356
+msgid "grouped by debate"
+msgstr "会議録ごとにグループ化"
+
+#: www/includes/easyparliament/searchengine.php:358
+msgid "showing all speeches"
+msgstr "すべての発言を表示"
+
+#. This sidebar is on the login page.
+#: www/includes/easyparliament/sidebars/userlogin.php:4
+msgid "Why do I need to sign in?"
+msgstr "なぜサインインが必要なのですか？"
+
+#: www/includes/easyparliament/sidebars/userlogin.php:6
+msgid ""
+"Signing in allows you to manage your email alerts, and change your password "
+"or email address."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:8
+msgid "Confirm alert"
+msgstr "アラートを確認する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:12
+msgid "Resume alert"
+msgstr "アラートを再開"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:18
+msgid "Suspend alert"
+msgstr "アラートを一時停止"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:22
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:102
+msgid "Delete alert"
+msgstr "削除の確認"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:34
+msgid "Edit alert"
+msgstr "警告を編集"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:43
+msgid "Include votes"
+msgstr "採決を含める"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_controls.php:50
+msgid "Ignore votes"
+msgstr "採決を無視する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_form_abandon_button.php:4
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:96
+msgid "Abandon changes"
+msgstr "変更を破棄する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_form_abandon_button.php:6
+msgid "Abandon new alert"
+msgstr "新しいアラートを破棄する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_form.php:4
+msgid "Edit Alert"
+msgstr "アラートの編集"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_form.php:6
+msgid "Create Alert"
+msgstr "アラートを作成"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:3
+msgid "Keyword alert"
+msgstr "キーワードアラート"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:10
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:11
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:51
+#: www/includes/easyparliament/templates/html/footer.php:13
+#: www/includes/easyparliament/templates/html/sidebar/_newsletter.php:11
+msgid "Your email address"
+msgstr "メールアドレス"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:16
+msgid ""
+"What word or phrase would you like to receive alerts about? (add as many as "
+"you like)"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:29
+msgid "Add another phrase"
+msgstr "別のフレーズを追加"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:36
+msgid "Require all phrases to be present (AND rather than OR)"
+msgstr "すべてのフレーズが含まれていること（ORではなくAND）を要求する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:41
+msgid ""
+"Are there any phrases you would not like to receive alerts about? (optional)"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:46
+msgid "Would you like to limit which debates/questions we alert about?"
+msgstr "通知する会議録や質問を制限しますか？"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:48
+msgid "Include all"
+msgstr "すべて含める"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:49
+#: www/includes/easyparliament/templates/html/search/form_options.php:55
+msgid "UK Parliament"
+msgstr "英国議会"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:71
+#: www/includes/easyparliament/templates/html/search/form_options.php:77
+msgid "Questions to the Mayor"
+msgstr "市長への質問"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:77
+msgid ""
+"Would you like to only alert when a particular person speaks? (optional)"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:90
+msgid "Or edit the name"
+msgstr "または名称を編集する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_define.php:98
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:86
+msgid "Next →"
+msgstr "次へ →"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:20
+msgid "Review Your Alert"
+msgstr "アラートを確認する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:24
+msgid ""
+"If you click 'save alert', you will get an alert if all of these words are "
+"in a speech"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:26
+msgid "You will get an alert if any of these words are in a speech"
+msgstr "これらの単語のいずれかが演説に含まれている場合、アラートが表示されます。"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:37
+msgid "Unless the speech also includes these words"
+msgstr "その発言にこれらの言葉が含まれていない限り"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:48
+msgid "And only if the speech is in"
+msgstr "かつての発言が〜に含まれている場合のみ"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:55
+msgid "in the UK, Scottish or Welsh Parliaments or Northern Ireland Assembly"
+msgstr "英国のスコットランド議会、ウェールズ議会、または北アイルランド議会内"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:61
+msgid "And only when spoken by"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:73
+msgid "Alert statistics"
+msgstr "警告統計"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:77
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:38
+msgid "Last 7 days"
+msgstr "過去7日間"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:78
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:35
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:39
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:21
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:25
+#, php-format
+msgid "%d mention"
+msgid_plural "%d mentions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:82
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:45
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:28
+msgid "Date of last mention"
+msgstr "最終言及日"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:87
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:50
+msgid "See results for this alert \t&rarr;"
+msgstr "このアラートの結果を見る \\t&rarr;"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:93
+msgid "Go Back"
+msgstr "戻る"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_review.php:96
+msgid "Save alert"
+msgstr "アラートを保存"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:16
+msgid "Adding some extra keywords"
+msgstr "追加のキーワードを追加する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:18
+msgid "Current keywords in this alert:"
+msgstr "このアラートに含まれる現在のキーワード："
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:34
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:19
+msgid "All time"
+msgstr "全期間"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:56
+msgid "We have also found the following related terms."
+msgstr "関連する以下の用語も見つかりました。"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:59
+msgid "Related Terms"
+msgstr "関連用語"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:77
+msgid "Add all related terms"
+msgstr "関連するすべての用語を追加する"
+
+#: www/includes/easyparliament/templates/html/alert/_alert_step_vector.php:85
+msgid "← Previous"
+msgstr "← 前へ"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:19
+msgid "Your alert has been confirmed"
+msgstr "アラートを確認しました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:21
+msgid "You will now receive email alerts for the following criteria:"
+msgstr "以下の条件でメール通知を受け取ります："
+
+#: www/includes/easyparliament/templates/html/alert/index.php:25
+msgid ""
+"This is normally the day after, but could conceivably be later due to issues "
+"at our or the parliament’s end."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:48
+msgid "Alert suspended"
+msgstr "警告は一時停止されました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:50
+msgid "You can reactivate the alert at any time, from the sidebar below."
+msgstr "下のサイドバーからいつでもアラートを再有効化できます。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:54
+msgid "Alert resumed"
+msgstr "アラートを再開しました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:56
+msgid ""
+"You will now receive email alerts on any day when there are entries in "
+"Hansard that match your criteria."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:60
+msgid "Alert deleted"
+msgstr "アラートを削除しました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:62
+msgid "You will no longer receive this alert."
+msgstr "このアラートは今後表示されません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:66
+msgid "All alerts deleted"
+msgstr "すべての通知を削除しました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:68
+msgid "You will no longer receive any alerts."
+msgstr "今後、通知は送信されません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:72
+msgid "Hmmm, something’s not right"
+msgstr "何かが正しくありません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:74
+msgid "The link you followed to reach this page appears to be incomplete."
+msgstr "このページにアクセスするためのリンクは不完全なようです。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:77
+msgid ""
+"If you clicked a link in your alert email you may need to manually copy and "
+"paste the entire link to the ‘Location’ bar of the web browser and try again."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:80
+#, php-format
+msgid ""
+"If you still get this message, please do <a href=\"mailto:%s\">email us</a> "
+"and let us know, and we’ll help out!"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:84
+msgid "Your alert has been added"
+msgstr "アラートが追加されました。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:86
+#, php-format
+msgid "You will now receive email alerts on any day when %s in parliament."
+msgstr "%sが議会にいる日のメール通知を受け取ります。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:89
+#: www/includes/easyparliament/templates/html/alert/index.php:94
+msgid "Your alert has been updated"
+msgstr "アラートが更新されました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:91
+#, php-format
+msgid "You will now receive email alerts when %s in parliament."
+msgstr "%s が議会で活動した際にメール通知を受け取ります。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:96
+#, php-format
+msgid "You will no longer receive email alerts when %s in parliament."
+msgstr "%s が議会に在席している間のメール通知は送信されません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:100
+#: www/includes/easyparliament/templates/html/user/welcome.php:6
+msgid "We’re nearly done…"
+msgstr "まもなく完了します。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:102
+#: www/includes/easyparliament/templates/html/alert/index.php:114
+msgid ""
+"You should receive an email shortly which will contain a link. You will need "
+"to follow that link to confirm your email address and receive future alerts. "
+"Thanks."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:106
+msgid "You’re already subscribed to that!"
+msgstr "すでに購読済みです。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:108
+msgid "It’s good to know you’re keen though."
+msgstr "意欲をお持ちであることは承知いたしました。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:112
+msgid "We’re nearly done"
+msgstr "完了まであと少しです。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:118
+msgid "Changes abandoned"
+msgstr "変更を破棄しました"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:120
+msgid "Those changes have been abandoned and your alerts are unchanged."
+msgstr "それらの変更は破棄され、アラートは変更されていません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:123
+msgid "Alert could not be created"
+msgstr "アラートを作成できませんでした。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:125
+#, php-format
+msgid ""
+"Sorry, we were unable to create that alert. Please <a href=\"mailto:%s\">let "
+"us know</a>. Thanks."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:136
+msgid "Create a Representative Alert"
+msgstr "代表者のアラートを作成"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:158
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:20
+#, php-format
+msgid "Sign up for alerts when people matching <i>%s</i> speaks"
+msgstr "<i>%s</i>に該当する人物の演説に関する通知を受け取る"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:174
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:36
+#, php-format
+msgid "When %s speaks."
+msgstr "%s が発言したとき。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:176
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:110
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:14
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:38
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:85
+#: www/includes/easyparliament/templates/html/footer.php:20
+#: www/includes/easyparliament/templates/html/sidebar/_newsletter.php:20
+msgid "Subscribe"
+msgstr "購読する"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:186
+msgid ""
+"That doesn’t match a person, postcode or constituency. Search again to "
+"refine your email alert."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:190
+msgid ""
+"\n"
+"                            You have used a postcode and something else in "
+"your\n"
+"                            search term – are you sure this is what you\n"
+"                            want? You will only get an alert if all of "
+"these\n"
+"                            are mentioned in the same debate."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:196
+#, php-format
+msgid ""
+"Did you mean to get alerts for when your representative mentions something "
+"instead? If so maybe you want to subscribe to…"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/index.php:209
+#, php-format
+msgid "Mentions of [%s] by your MP, %s"
+msgstr "あなたの国会議員 %s による [%s] の言及"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:210
+#: www/includes/easyparliament/templates/html/alert/index.php:224
+#: www/includes/easyparliament/templates/html/alert/index.php:238
+#: www/includes/easyparliament/templates/html/alert/index.php:253
+msgid "Create alert"
+msgstr "アラートを作成"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:223
+#, php-format
+msgid "Mentions of [%s] by your MSP, %s"
+msgstr "あなたの国会議員である%sによる[%s]への言及"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:237
+#, php-format
+msgid "Mentions of [%s] by your MS, %s"
+msgstr "あなたの国会議員、%s による [%s] の言及"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:244
+msgid "Do you want alerts for a word or phrase?"
+msgstr "単語やフレーズの通知を受け取りますか？"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:252
+#, php-format
+msgid "Receive alerts when %s"
+msgstr "%sの際に通知を受け取る"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:257
+msgid "Not quite right? Search again to refine your email alert."
+msgstr "正しくありませんか？検索をやり直してメール通知を絞り込んでください。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:269
+msgid "Sign in to see your previous alerts"
+msgstr "以前のアラートを確認するにはサインインしてください。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:270
+msgid "Create a free account"
+msgstr "無料アカウントを作成する"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:274
+msgid "Create an alert for a phrase or keyword"
+msgstr "フレーズまたはキーワードのアラートを作成する"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:277
+#: www/includes/easyparliament/templates/html/alert/index.php:279
+#: www/includes/easyparliament/templates/html/alert/index.php:317
+#: www/includes/easyparliament/templates/html/alert/index.php:319
+msgid "Create new keyword alert"
+msgstr "新しいキーワードアラートを作成"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:288
+msgid "Create an alert when an MP, MSP, MS or MLA speaks"
+msgstr "国会議員、MSP、MS、またはMLAが発言した際にアラートを作成する"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:293
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:98
+msgid "Create new Representative alert"
+msgstr "新しい国会議員の通知を作成"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:302
+#: www/includes/easyparliament/templates/html/alert/_list.php:10
+msgid "Delete all alerts"
+msgstr "すべての通知を削除する"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:309
+msgid "Keywords alerts"
+msgstr "キーワードアラート"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:312
+msgid "You haven't created any keyword alerts."
+msgstr "キーワードアラートは作成されていません。"
+
+#: www/includes/easyparliament/templates/html/alert/index.php:325
+msgid ""
+"You have a large number of alerts, so preview counts are disabled. Click on "
+"an alert to see its full search results."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:8
+#, php-format
+msgid "%d mention this week"
+msgid_plural "%d mentions this week"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:24
+msgid "This week"
+msgstr "今週"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:32
+msgid "See results for this alert &rarr;"
+msgstr "このアラートの結果を見る &rarr;"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:75
+msgid ""
+"This alert applies to the following <strong class=\"bold\">representative</"
+"span>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:92
+msgid "Representative alerts"
+msgstr "国会議員への通知"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:107
+#, php-format
+msgid "You are not subscribed to an alert for your current MP, %s"
+msgstr "現在の国会議員%sの通知を購読していません。"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:117
+msgid "You are subscribed to the following alerts about your MP."
+msgstr "以下の国会議員に関するアラートを購読しています。"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:122
+#: www/includes/easyparliament/templates/html/alert/_own_mp_alerts.php:8
+#, php-format
+msgid "Alert when %s is <strong>mentioned</strong>"
+msgstr "%sが<strong>言及</strong>された際に通知する"
+
+#: www/includes/easyparliament/templates/html/alert/_keyword_alert_list.php:127
+#: www/includes/easyparliament/templates/html/alert/_own_mp_alerts.php:14
+msgid "Create new alert"
+msgstr "新しいアラートを作成"
+
+#: www/includes/easyparliament/templates/html/alert/_list.php:2
+msgid "Email alerts"
+msgstr "メール通知"
+
+#: www/includes/easyparliament/templates/html/alert/_list.php:5
+#, php-format
+msgid "You currently have %d email alert"
+msgid_plural "You currently have %d email alerts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:3
+#, php-format
+msgid ""
+"Sign up for alerts when Representatives for constituencies matching <i>%s</"
+"i> speaks"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:66
+msgid "Search by postcode, or MP/MSP/MS/MLA name"
+msgstr "住所、または国会議員/MSP/MS/MLAの名前で検索"
+
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:67
+msgid "e.g. B2 4QA or John Doe"
+msgstr "例：B2 4QA または John Doe"
+
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:77
+msgid "Do not include votes in the alert"
+msgstr "アラートに採決を含めないでください。"
+
+#: www/includes/easyparliament/templates/html/alert/_mp_alert_form.php:98
+msgid "Stop creating alert"
+msgstr "アラートの作成を停止する"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:25
+#: www/includes/easyparliament/templates/html/divisions/vote.php:24
+#: www/includes/easyparliament/templates/html/section/_section_content.php:183
+#: www/includes/easyparliament/templates/html/section/_section_toc.php:34
+#, php-format
+msgid "Division number %s"
+msgstr "採決番号 %s"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:45
+#: www/includes/easyparliament/templates/html/section/_business_section.php:18
+#: www/includes/easyparliament/templates/html/section/day.php:72
+msgid "What is this?"
+msgstr "これは何ですか？"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:47
+msgid "This list contains votes from the House of Commons."
+msgstr "このリストには庶民院の採決が含まれています。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:49
+msgid "This list contains votes from the House of Lords."
+msgstr "このリストには参議院議員の採決が含まれています。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:51
+msgid "This list contains votes from Public Bill Committees."
+msgstr "このリストには公共法案委員会の採決が含まれています。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:53
+msgid "This list contains votes from the Scottish Parliament."
+msgstr "このリストにはスコットランド議会の採決が含まれています。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:55
+msgid "This list contains votes from the Senedd."
+msgstr "このリストにはSeneddの採決が含まれています。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:57
+msgid ""
+"This list contains votes from the House of Commons, House of Lords, Public "
+"Bill Committees, Senedd, and the Scottish Parliament."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:60
+msgid "Only show votes from:"
+msgstr "以下の者の採決のみを表示："
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:70
+msgid ""
+"Votes appear here the day after they happened - but will be available on <a "
+"href=\"https://votes.theyworkforyou.com/decisions\">TheyWorkForYou Votes</a> "
+"within half an hour of the vote, and posted on our <a href=\"https://bsky."
+"app/profile/theyworkforyou.com\">BlueSky feed</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:74
+msgid "Learn more about our voting records and what they mean."
+msgstr "投票記録とその意味についての詳細を見る。"
+
+#: www/includes/easyparliament/templates/html/divisions/index.php:78
+#: www/includes/easyparliament/templates/html/mp/register.php:33
+msgid "Last updated:"
+msgstr "最終更新日："
+
+#: www/includes/easyparliament/templates/html/divisions/_name_vote_list.php:17
+msgid "A-Z by last name"
+msgstr "姓のアルファベット順"
+
+#: www/includes/easyparliament/templates/html/divisions/_name_vote_list.php:19
+#: www/includes/easyparliament/templates/html/search/by-person.php:51
+#: www/includes/easyparliament/templates/html/search/by-person.php:53
+msgid "Show All"
+msgstr "すべて表示"
+
+#: www/includes/easyparliament/templates/html/divisions/_name_vote_list.php:29
+msgid "Tellers"
+msgstr "開票立会人"
+
+#: www/includes/easyparliament/templates/html/divisions/vote.php:51
+msgid "Want to understand more about this vote?"
+msgstr "この採決について詳しく知りたいですか？"
+
+#: www/includes/easyparliament/templates/html/divisions/vote.php:52
+msgid "Read the debate that it was part of"
+msgstr "その会議録を閲覧する"
+
+#: www/includes/easyparliament/templates/html/divisions/vote.php:67
+msgid "Show full debate"
+msgstr "会議録をすべて表示"
+
+#: www/includes/easyparliament/templates/html/divisions/vote.php:72
+#, php-format
+msgid "%s’s full voting record"
+msgstr "%sの全採決記録"
+
+#: www/includes/easyparliament/templates/html/divisions/vote.php:77
+#: www/includes/easyparliament/templates/html/section/_section_content.php:281
+#: www/includes/easyparliament/templates/html/section/_section_content.php:295
+msgid "Vote analysis"
+msgstr "投票分析"
+
+#: www/includes/easyparliament/templates/html/divisions/_votes.php:5
+msgid "Aye"
+msgstr "賛成"
+
+#: www/includes/easyparliament/templates/html/divisions/_votes.php:9
+msgid "No"
+msgstr "いいえ"
+
+#: www/includes/easyparliament/templates/html/divisions/_votes.php:13
+msgid "Absent"
+msgstr "欠席"
+
+#: www/includes/easyparliament/templates/html/divisions/_votes.php:17
+msgid "Abstained"
+msgstr "棄権"
+
+#: www/includes/easyparliament/templates/html/divisions/_vote_summary.php:2
+#, php-format
+msgid "%s for"
+msgstr "%s 用の"
+
+#: www/includes/easyparliament/templates/html/divisions/_vote_summary.php:3
+#, php-format
+msgid "%s against"
+msgstr "%sに反対"
+
+#: www/includes/easyparliament/templates/html/divisions/_vote_summary.php:5
+#, php-format
+msgid "%s abstained"
+msgstr "%sは棄権した。"
+
+#: www/includes/easyparliament/templates/html/divisions/_vote_summary.php:8
+#, php-format
+msgid "%s absent"
+msgstr "%s 不在"
+
+#: www/includes/easyparliament/templates/html/footer.php:7
+msgid ""
+"Making it easy to keep an eye on the UK’s parliaments. Discover who "
+"represents you, how they’ve voted and what they’ve said in debates – simply "
+"and clearly."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/footer.php:10
+#: www/includes/easyparliament/templates/html/sidebar/_newsletter.php:7
+msgid "Sign up to mySociety’s newsletter"
+msgstr "mySocietyのニュースレターを購読する"
+
+#: www/includes/easyparliament/templates/html/footer.php:31
+msgid "I’m also interested in data, coding and development emails."
+msgstr "データ、コーディング、および開発に関するメールにも興味があります。"
+
+#: www/includes/easyparliament/templates/html/footer.php:36
+msgid "Your data"
+msgstr "あなたのデータ"
+
+#: www/includes/easyparliament/templates/html/footer.php:57
+msgid ""
+"This site is not publicly funded. Support our mission of making UK politics "
+"more transparent and accessible."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/footer.php:58
+msgid "Donate now"
+msgstr "寄付をする"
+
+#: www/includes/easyparliament/templates/html/footer.php:73
+msgid "Built by"
+msgstr "作成者："
+
+#: www/includes/easyparliament/templates/html/footer.php:81
+#, php-format
+msgid ""
+"%s is a registered charity in England and Wales (1076346) and a limited "
+"company (03277032). We provide commercial services through our wholly owned "
+"subsidiary %s (05798215)."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/glossary/addterm_matches.php:12
+msgid "match"
+msgid_plural "matches"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/glossary/addterm_matches.php:13
+msgid "a definition"
+msgid_plural "some definitions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/glossary/addterm_matches.php:13
+msgid "it"
+msgid_plural "them"
+msgstr[0] ""
+msgstr[1] ""
+
+#. All wrans have 2 speeches, so no need for this.
+#. All WMS have 1 speech
+#: www/includes/easyparliament/templates/html/hansard_person.php:31
+#: www/includes/easyparliament/templates/html/section/_business_list_item.php:12
+#: www/includes/easyparliament/templates/html/section/day.php:47
+#: www/includes/easyparliament/templates/html/section/_section_content.php:363
+#, php-format
+msgid "%s speech"
+msgid_plural "%s speeches"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/hansard_person.php:46
+#: www/includes/easyparliament/templates/html/section/day.php:81
+msgid "No data to display."
+msgstr "表示するデータはありません。"
+
+#: www/includes/easyparliament/templates/html/header.php:129
+msgid "Menu"
+msgstr "メニュー"
+
+#: www/includes/easyparliament/templates/html/header.php:155
+msgid "Search TheyWorkForYou"
+msgstr "TheyWorkForYouを検索"
+
+#: www/includes/easyparliament/templates/html/header.php:158
+msgid "e.g. a postcode, person, or topic"
+msgstr "例：住所、人物、またはトピック"
+
+#: www/includes/easyparliament/templates/html/homepage/_featured_announcement.php:2
+msgid "The latest"
+msgstr "最新の"
+
+#: www/includes/easyparliament/templates/html/homepage/featured.php:2
+msgid "In the news"
+msgstr "ニュース一覧"
+
+#: www/includes/easyparliament/templates/html/homepage/featured.php:10
+msgid "Random debate"
+msgstr "ランダムな会議録"
+
+#: www/includes/easyparliament/templates/html/homepage/featured.php:30
+msgid "Key events"
+msgstr "主要な出来事"
+
+#: www/includes/easyparliament/templates/html/homepage/recent-votes.php:4
+msgid "Show all recent votes"
+msgstr "最近のすべての採決を表示"
+
+#: www/includes/easyparliament/templates/html/homepage/recent-votes.php:21
+msgid ""
+"More recent votes are available on <a href=\"https://votes.theyworkforyou."
+"com/decisions\">TheyWorkForYou Votes</a>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/interests/category.php:29
+msgid "Back to categories list"
+msgstr "カテゴリー一覧に戻る"
+
+#: www/includes/easyparliament/templates/html/interests/category.php:42
+msgid "Register of interests"
+msgstr "利害関係の登録"
+
+#: www/includes/easyparliament/templates/html/interests/category.php:44
+msgid "just new entries"
+msgstr "新規の登録のみ"
+
+#: www/includes/easyparliament/templates/html/interests/category.php:45
+msgid ""
+"This page shows the latest version of the register of interests by category."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/interests/category.php:47
+#: www/includes/easyparliament/templates/html/mp/register.php:72
+msgid "For more information, see the official Senedd page"
+msgstr "詳細は、公式のSeneddページをご覧ください。"
+
+#: www/includes/easyparliament/templates/html/interests/category.php:51
+msgid "Read more about our registers data"
+msgstr "登録データの詳細はこちらをご覧ください。"
+
+#. * @var MySociety\TheyWorkForYou\DataClass\Regmem\Register $register
+#: www/includes/easyparliament/templates/html/interests/category.php:56
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: www/includes/easyparliament/templates/html/mp/_chamber_info_panel.php:37
+msgid "Committees and groups"
+msgstr "委員会およびグループ"
+
+#: www/includes/easyparliament/templates/html/mp/_chamber_info_panel.php:47
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:72
+#: www/includes/easyparliament/templates/html/mp/signatures.php:25
+msgid "Signatures"
+msgstr "署名"
+
+#. * @var MySociety\TheyWorkForYou\DataClass\Regmem\Person $register
+#: www/includes/easyparliament/templates/html/mp/error.php:5
+msgid "Whoops..."
+msgstr "おっと…"
+
+#: www/includes/easyparliament/templates/html/mp/error.php:14
+#, php-format
+msgid "Enter your postcode to see who your %s is, and what they’ve been doing"
+msgstr "住所を入力して、あなたの%sが誰で、どのような活動を行っているかを確認してください。"
+
+#: www/includes/easyparliament/templates/html/mp/error.php:20
+msgid "Your postcode"
+msgstr "あなたの住所"
+
+#: www/includes/easyparliament/templates/html/mp/error.php:23
+msgid "Go"
+msgstr "次へ"
+
+#: www/includes/easyparliament/templates/html/mp/error.php:31
+#, php-format
+msgid "Or <a href=\"%s\">browse all %s</a>?"
+msgstr "または<a href=\"%s\">%sをすべて閲覧</a>しますか？"
+
+#: www/includes/easyparliament/templates/html/mp/error.php:34
+#, php-format
+msgid "Why not <a href=\"%s\">browse all %s</a>?"
+msgstr "<a href=\"%s\">%sをすべて閲覧</a>しませんか？"
+
+#: www/includes/easyparliament/templates/html/mp/header.php:27
+#, php-format
+msgid ""
+"<span class=\"person-header__about__position__role\">%s %s</span> for <span "
+"class=\"person-header__about__position__constituency\">%s</span>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/header.php:34
+#, php-format
+msgid "<span class=\"person-header__about__position__role\">%s %s</span>"
+msgstr "<span class=\"person-header__about__position__role\">%s %s</span>"
+
+#: www/includes/easyparliament/templates/html/mp/header.php:42
+#, php-format
+msgid ""
+"<span class=\"person-header__about__position__role\">Former %s %s</span> for "
+"<span class=\"person-header__about__position__constituency\">%s</span>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/header.php:49
+#, php-format
+msgid ""
+"<span class=\"person-header__about__position__role\">Former %s %s</span>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/header.php:69
+msgid "Search this person’s speeches"
+msgstr "この方の会議録を検索する"
+
+#: www/includes/easyparliament/templates/html/mp/header.php:87
+msgid "Send a message"
+msgstr "メッセージを送信する"
+
+#: www/includes/easyparliament/templates/html/mp/header.php:90
+msgid "Get email updates"
+msgstr "メールで更新を受け取る"
+
+#: www/includes/easyparliament/templates/html/mp/list.php:5
+msgid "That name is not unique. Please select from the following:"
+msgstr "その名称は重複しています。以下から選択してください："
+
+#: www/includes/easyparliament/templates/html/mp/list.php:15
+#: www/includes/easyparliament/templates/html/postcode/index.php:144
+msgid "Browse all MPs"
+msgstr "すべての国会議員を閲覧する"
+
+#: www/includes/easyparliament/templates/html/mp/memberships.php:25
+msgid "Committees"
+msgstr "委員会"
+
+#: www/includes/easyparliament/templates/html/mp/memberships.php:48
+msgid "Committee memberships held in the past"
+msgstr "過去の委員会委員歴"
+
+#: www/includes/easyparliament/templates/html/mp/memberships.php:62
+msgid "All-Party Parliamentary Groups (APPGs)"
+msgstr "全政党議員グループ（APPG）"
+
+#: www/includes/easyparliament/templates/html/mp/memberships.php:68
+#, php-format
+msgid "%s is an officer of the following groups"
+msgstr "%sは以下のグループの役員です。"
+
+#: www/includes/easyparliament/templates/html/mp/memberships.php:69
+#, php-format
+msgid "%s is a member of the following groups"
+msgstr "%sは以下のグループの所属です"
+
+#. * @var MySociety\TheyWorkForYou\DataClass\APPGs\APPGMembership $membership
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:3
+#: www/includes/easyparliament/templates/html/static/markdown_template.php:9
+#, php-format
+msgid "%s Menu"
+msgstr "%s メニュー"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:15
+#: www/includes/easyparliament/templates/html/mp/profile.php:51
+msgid "Profile"
+msgstr "プロフィール"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:22
+msgid "Speeches and Questions"
+msgstr "演説および質問"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:29
+msgid "Speeches & Debates"
+msgstr "演説と会議録"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:32
+msgid "Written Questions"
+msgstr "答弁書"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:43
+msgid "Committees / APPGs"
+msgstr "委員会 / APPG"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:50
+msgid "Memberships"
+msgstr "所属"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:53
+msgid "Previous Memberships"
+msgstr "過去の所属"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:57
+msgid "APPG Offices held"
+msgstr "APPG事務所の開催"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:60
+msgid "APPG memberships"
+msgstr "APPGの会員資格"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:78
+msgid "Recent motions to annul"
+msgstr "最近の無効化動議"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:81
+msgid "Recent open letters"
+msgstr "最近の公開書簡"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:84
+msgid "Recent EDMs"
+msgstr "最近のEDM"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:87
+#: www/includes/easyparliament/templates/html/mp/signatures.php:73
+msgid "Topics of interest"
+msgstr "関心のあるトピック"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:97
+msgid "Voting Summary"
+msgstr "採決の概要"
+
+#. * @var MySociety\TheyWorkForYou\DataClass\Regmem\Person $register
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:156
+msgid "2024 Election Donations"
+msgstr "2024年選挙への寄付"
+
+#: www/includes/easyparliament/templates/html/mp/_person_navigation.php:179
+msgid "Constituency information"
+msgstr "選挙区情報"
+
+#: www/includes/easyparliament/templates/html/mp/_profile_footer.php:2
+msgid ""
+"Note for journalists and researchers: The data on this page may be used "
+"freely, on condition that TheyWorkForYou.com is cited as the source."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/_profile_footer.php:4
+msgid "This data was produced by TheyWorkForYou from a variety of sources."
+msgstr "このデータは、TheyWorkForYouが様々な情報源から作成したものです。"
+
+#: www/includes/easyparliament/templates/html/mp/_profile_footer.php:6
+msgid ""
+"For an explanation of the vote descriptions please see our page about <a "
+"href=\"/voting-information\">voting information on TheyWorkForYou</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/_profile_footer.php:11
+#: www/includes/easyparliament/templates/html/mp/_profile_footer.php:14
+msgid "Profile photo:"
+msgstr "プロフィール写真："
+
+#: www/includes/easyparliament/templates/html/mp/profile.php:85
+msgid "Social Media"
+msgstr "ソーシャルメディア"
+
+#: www/includes/easyparliament/templates/html/mp/profile.php:109
+msgid "Currently held offices"
+msgstr "現在の役職"
+
+#: www/includes/easyparliament/templates/html/mp/profile.php:123
+msgid "Other offices held in the past"
+msgstr "過去に務めたその他の役職"
+
+#: www/includes/easyparliament/templates/html/mp/recent.php:78
+msgid "This person has not voted recently."
+msgstr "この人物は最近投票を行っていません。"
+
+#: www/includes/easyparliament/templates/html/mp/register.php:28
+#, php-format
+msgid "%s has registers in the following chambers:"
+msgstr "%s は以下の議院に登録されています。"
+
+#: www/includes/easyparliament/templates/html/mp/register.php:65
+msgid "View the history of this person’s entries in the Register"
+msgstr "この人物の登録情報の履歴を表示する"
+
+#: www/includes/easyparliament/templates/html/mp/register.php:68
+msgid "This register last updated on:"
+msgstr "この登録情報の最終更新日："
+
+#: www/includes/easyparliament/templates/html/mp/signatures.php:28
+msgid "Recent motions to annul (and similar) signed"
+msgstr "署名済みの最近の無効化（および類似の）動議"
+
+#: www/includes/easyparliament/templates/html/mp/signatures.php:40
+msgid "Recent open letters signed"
+msgstr "署名された最近の公開質問状"
+
+#: www/includes/easyparliament/templates/html/mp/signatures.php:51
+msgid "Recent Early Day Motions signed"
+msgstr "署名済みの最近の早期動議"
+
+#: www/includes/easyparliament/templates/html/mp/signatures.php:63
+msgid "All open letters and EDMs signed"
+msgstr "署名済みのすべての公開書簡およびEDM"
+
+#: www/includes/easyparliament/templates/html/mp/speeches.php:26
+msgid "Speeches and Debates"
+msgstr "演説および会議録"
+
+#: www/includes/easyparliament/templates/html/mp/speeches.php:40
+msgid "No recent speeches to display."
+msgstr "表示する最近の演説はありません。"
+
+#: www/includes/easyparliament/templates/html/mp/speeches.php:46
+msgid "Written Questions and Answers"
+msgstr "答弁書と質疑応答"
+
+#: www/includes/easyparliament/templates/html/mp/speeches.php:59
+msgid "No recent written questions to display."
+msgstr "表示する最近の答弁書はありません。"
+
+#: www/includes/easyparliament/templates/html/mp/_whip_removal_panel.php:3
+#, php-format
+msgid "Why is %s listed as an independent %s?"
+msgstr "なぜ%sは無所属の%sとして記載されているのですか？"
+
+#: www/includes/easyparliament/templates/html/mp/_whip_removal_panel.php:5
+#, php-format
+msgid ""
+"%s is listed as an independent %s because their party (%s) suspended them "
+"from the parliamentary party (\"removed the whip\")."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/_whip_removal_panel.php:8
+msgid ""
+"The whip can be removed for various reasons, including voting against the "
+"party on key issues, breaches of party rules, or other disciplinary matters."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/mp/_whip_removal_panel.php:12
+#, php-format
+msgid "Read more about the circumstances %s had the whip removed."
+msgstr "%s の鞭の剥奪に関する詳細はこちら。"
+
+#: www/includes/easyparliament/templates/html/people/index.php:31
+#, php-format
+msgid "Based on postcode <strong>%s</strong>"
+msgstr "住所 <strong>%s</strong> に基づく"
+
+#: www/includes/easyparliament/templates/html/people/index.php:32
+msgid "(Change postcode)"
+msgstr "（住所を変更）"
+
+#: www/includes/easyparliament/templates/html/people/index.php:37
+#, php-format
+msgid "Your former %s is"
+msgstr "あなたの以前の%sは"
+
+#: www/includes/easyparliament/templates/html/people/index.php:39
+#, php-format
+msgid "Your %s is"
+msgstr "あなたの%sは"
+
+#: www/includes/easyparliament/templates/html/people/index.php:59
+#, php-format
+msgid "Your former regional %s are"
+msgstr "あなたの以前の地域%sは"
+
+#: www/includes/easyparliament/templates/html/people/index.php:61
+#, php-format
+msgid "Your former %s are"
+msgstr "あなたの以前の%sは"
+
+#: www/includes/easyparliament/templates/html/people/index.php:65
+#, php-format
+msgid "Your regional %s are"
+msgstr "あなたの地域の%sは以下の通りです。"
+
+#: www/includes/easyparliament/templates/html/people/index.php:67
+#, php-format
+msgid "Your %s are"
+msgstr "あなたの%sは"
+
+#: www/includes/easyparliament/templates/html/people/index.php:96
+#, php-format
+msgid "Find %s by name:"
+msgstr "名前で%sを検索："
+
+#: www/includes/easyparliament/templates/html/people/index.php:98
+#, php-format
+msgid "Find your %s by postcode:"
+msgstr "住所から%sを検索："
+
+#: www/includes/easyparliament/templates/html/people/index.php:100
+#, php-format
+msgid "Find your %s by name or postcode:"
+msgstr "名前または住所で%sを検索："
+
+#: www/includes/easyparliament/templates/html/people/index.php:103
+msgid "Find"
+msgstr "検索"
+
+#. No reps. Election period!
+#: www/includes/easyparliament/templates/html/people/index.php:133
+msgid ""
+"During the period from the dissolution of the Senedd to the election, there "
+"are no Members of the Senedd."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/people/index.php:134
+msgid "View list of MSs as it was when the Senedd was dissolved"
+msgstr "ウェールズ議会解散時のMSのリストを表示"
+
+#: www/includes/easyparliament/templates/html/people/index.php:146
+msgid "<strong>Sorted by</strong> First name"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/people/index.php:147
+#: www/includes/easyparliament/templates/html/people/index.php:150
+#: www/includes/easyparliament/templates/html/people/index.php:153
+msgid "Sort by"
+msgstr "並べ替え"
+
+#: www/includes/easyparliament/templates/html/people/index.php:147
+#: www/includes/easyparliament/templates/html/people/index.php:150
+msgid "Last name"
+msgstr "姓"
+
+#: www/includes/easyparliament/templates/html/people/index.php:149
+#: www/includes/easyparliament/templates/html/people/index.php:159
+msgid "<strong>Sorted by</strong> Party"
+msgstr "<strong>政党で並べ替え</strong>"
+
+#: www/includes/easyparliament/templates/html/people/index.php:150
+#: www/includes/easyparliament/templates/html/people/index.php:153
+msgid "First name"
+msgstr "名"
+
+#: www/includes/easyparliament/templates/html/people/index.php:152
+msgid "<strong>Sorted by</strong> Last name"
+msgstr "<strong>並べ替え</strong>：姓の順"
+
+#: www/includes/easyparliament/templates/html/people/index.php:162
+msgid "<strong>Sorted by</strong> Name"
+msgstr "<strong>並べ替え</strong>：名前"
+
+#: www/includes/easyparliament/templates/html/people/index.php:238
+msgid "Download data"
+msgstr "データをダウンロード"
+
+#: www/includes/easyparliament/templates/html/people/index.php:240
+msgid "Download this list as a CSV"
+msgstr "このリストをCSVとしてダウンロードする"
+
+#: www/includes/easyparliament/templates/html/people/index.php:241
+msgid "suitable for Excel"
+msgstr "Excelに対応"
+
+#: www/includes/easyparliament/templates/html/people/index.php:298
+#, php-format
+msgid "Historical list of all %s"
+msgstr "すべての%sの履歴一覧"
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:53
+msgid "Your representatives"
+msgstr "あなたの選出議員"
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:58
+#, php-format
+msgid ""
+"Your former <strong>MP</strong> (Member of Parliament) is <a href=\"%s\">%s</"
+"a>, %s"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:60
+#, php-format
+msgid ""
+"Your <strong>MP</strong> (Member of Parliament) is <a href=\"%s\">%s</a>, %s"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:80
+#, php-format
+msgid ""
+"Your <strong>constituency MSP</strong> (Member of the Scottish Parliament) "
+"is <a href=\"%s\">%s</a>, %s"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:82
+#, php-format
+msgid ""
+"Your <strong>constituency MSP</strong> (Member of the Scottish Parliament) "
+"was <a href=\"%s\">%s</a>, %s"
+msgstr ""
+
+#. First %s is URL, second %s is name, third %s is constituency
+#: www/includes/easyparliament/templates/html/postcode/index.php:89
+#, php-format
+msgid ""
+"Your <strong>constituency MS</strong> (Member of the Senedd) is <a href=\"%s"
+"\">%s</a>, %s"
+msgstr ""
+
+#. First %s is URL, second %s is name, third %s is constituency
+#: www/includes/easyparliament/templates/html/postcode/index.php:92
+#, php-format
+msgid ""
+"Your <strong>constituency MS</strong> (Member of the Senedd) was <a href=\"%s"
+"\">%s</a>, %s"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:102
+#, php-format
+msgid ""
+"Your <strong>%s MLAs</strong> (Members of the Legislative Assembly) are:"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:104
+#, php-format
+msgid "Your <strong>%s region MSs</strong> are:"
+msgstr "あなたの<strong>%s 地域MS</strong>は以下の通りです："
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:106
+#, php-format
+msgid "Your <strong>%s %s</strong> are:"
+msgstr "あなたの<strong>%s %s</strong>は以下の通りです："
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:110
+#, php-format
+msgid ""
+"Your <strong>%s MLAs</strong> (Members of the Legislative Assembly) were:"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:112
+#, php-format
+msgid "Your <strong>%s region MSs</strong> were:"
+msgstr "あなたの<strong>%s地域の国会議員</strong>は以下の通りです："
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:114
+#, php-format
+msgid "Your <strong>%s %s</strong> were:"
+msgstr "あなたの<strong>%s %s</strong>は以下の通りです："
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:142
+msgid "Browse people"
+msgstr "人物を検索"
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:150
+msgid "Support TheyWorkForYou"
+msgstr "TheyWorkForYouを支援する"
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:151
+msgid ""
+"After the election we'll be working to help you understand and hold your "
+"representatives to account."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:152
+msgid "Can you help us do that by making a small donation?"
+msgstr "少額の寄付でご協力いただけますか？"
+
+#: www/includes/easyparliament/templates/html/postcode/index.php:153
+msgid "Donate £5 to TheyWorkForYou"
+msgstr "TheyWorkForYouに£5を寄付する"
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:1
+msgid "More information"
+msgstr "詳細を見る"
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:5
+msgid ""
+"Your MSPs represents you in the Scottish Parliament. The Scottish Parliament "
+"is responsible for a wide range of devolved matters in which it sets policy "
+"independently of the London Parliament. Devolved matters include education, "
+"health, agriculture, justice and prisons. It also has some tax-raising "
+"powers."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:9
+msgid ""
+"Your MLAs represent you on the Northern Ireland Assembly. The Northern "
+"Ireland Assembly has full authority over “transferred matters”, which "
+"include agriculture, education, employment, the environment and health."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:13
+msgid ""
+"Your MSs represents you in the Senedd. The Senedd has a wide range of powers "
+"over areas including economic development, transport, finance, local "
+"government, health, housing and the Welsh Language."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:17
+msgid ""
+"Your MP represents you in the House of Commons. The House of Commons is "
+"responsible for making laws in the UK and for overall scrutiny of all "
+"aspects of government."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/repexplain.php:23
+#, php-format
+msgid ""
+"You can write to any representative, or your local councillors through <a "
+"href=\"%s\">WriteToThem.com</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:4
+msgid "Senedd Election"
+msgstr "ウェールズ議会選挙"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:6
+msgid "See your current representatives"
+msgstr "現在の国会議員を確認する"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:21
+#, php-format
+msgid "There is a Senedd election on <strong>%s</strong>"
+msgstr "<strong>%s</strong>に上院選挙があります。"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:24
+#, php-format
+msgid " (%d day away)"
+msgid_plural " (%d days away)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:26
+msgid "(tomorrow!)"
+msgstr "（明日！）"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:28
+msgid "(today!)"
+msgstr "（本日！）"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:35
+#, php-format
+msgid "For this election, you will be in the <strong>%s</strong> constituency."
+msgstr "今回の選挙では、あなたは<strong>%s</strong>選挙区に所属することになります。"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:37
+msgid "This election has a new voting system"
+msgstr "この選挙には新しい投票制度が導入されています。"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:38
+msgid ""
+"The way you vote has changed. When voting for your Members of the Senedd, "
+"you will now vote on one ballot paper, instead of two as previously. You "
+"will vote once for a single party or independent candidate, and seats will "
+"be allocated using proportional representation. Party candidates will be "
+"elected in the order they appear on their party list."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:40
+msgid ""
+"These changes mean that you will have a new constituency. Each constituency "
+"will elect six members, and the overall number of Senedd members is "
+"increasing from 60 to 96. Senedd elections will happen every four years."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:42
+msgid "Learn more about the Senedd changes."
+msgstr "Seneddの変更に関する詳細を見る。"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:47
+msgid "Parties standing in your constituency"
+msgstr "あなたの選挙区に立候補している政党"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:49
+msgid ""
+"The following shows the candidate lists for the different parties standing "
+"in your constituency. The order of parties is randomised."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:50
+msgid ""
+"Within a party list, candidates are ordered by their position on the party "
+"list, with the first candidate more likely to be elected than the second, "
+"and so on."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:70
+msgid "Democracy Club"
+msgstr "民主主義クラブ"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:71
+#, php-format
+msgid "For more information visit <a href=\"%s\">WhoCanIVoteFor</a>. "
+msgstr "詳細は<a href=\"%s\">WhoCanIVoteFor</a>をご覧ください。"
+
+#: www/includes/easyparliament/templates/html/postcode/senedd2026.php:72
+#, php-format
+msgid ""
+"This data has been provided by <a href=\"%s\">Democracy Club</a>, thanks to "
+"them."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/register/_entry_display.php:21
+msgid "New entry or subentry"
+msgstr "新規項目または下位項目"
+
+#: www/includes/easyparliament/templates/html/register/_entry_display.php:23
+msgid "Permalink to this entry"
+msgstr "この項目のパーマリンク"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:10
+#, php-format
+msgid "Who says <em class=\"current-search-term\">%s</em> the most?"
+msgstr "<em class=\"current-search-term\">%s</em>を最も多く発言しているのは誰ですか？"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:23
+msgid "No results for MSs only"
+msgstr "MSのみの結果はありません"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:28
+msgid "Show results for all speakers"
+msgstr "すべての発言者の結果を表示"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:48
+msgid "Results grouped by person"
+msgstr "人物ごとにグループ化された結果"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:75
+#: www/includes/easyparliament/templates/html/search/by-person.php:77
+msgid "MSs only"
+msgstr "参議院議員のみ"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:86
+msgid "Ungroup results"
+msgstr "結果のグループ解除"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:95
+msgid "Occurences"
+msgstr "発生回数"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:96
+msgid "Speaker"
+msgstr "議長"
+
+#: www/includes/easyparliament/templates/html/search/by-person.php:97
+#: www/includes/easyparliament/templates/html/search/form_options.php:28
+msgid "Date range"
+msgstr "期間"
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:14
+#, php-format
+msgid "Search only speeches by %s"
+msgstr "%sによる演説のみを検索"
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:20
+#: www/includes/easyparliament/templates/html/search/form_options.php:3
+msgid "Advanced search"
+msgstr "詳細検索"
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:22
+msgid "Exactly:"
+msgstr "正確には："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:23
+msgid "Excluding:"
+msgstr "除外："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:24
+msgid "From:"
+msgstr "差出人："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:25
+msgid "To:"
+msgstr "宛先："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:26
+msgid "Person:"
+msgstr "氏名："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:27
+msgid "Section:"
+msgstr "セクション："
+
+#: www/includes/easyparliament/templates/html/search/form_main.php:28
+msgid "Column:"
+msgstr "項目："
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:5
+msgid "Find this exact word or phrase"
+msgstr "この正確な単語またはフレーズを検索"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:11
+msgid ""
+"You can also do this from the main search box by putting exact words in "
+"quotes: like <code>\"cycling\"</code> or <code>\"hutton report\"</code>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:12
+msgid ""
+"By default, we show words related to your search term, like “cycle” and "
+"“cycles” in a search for <code>cycling</code>. Putting the word in quotes, "
+"like <code>\"cycling\"</code>, will stop this."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:17
+msgid "Excluding these words"
+msgstr "これらの単語を除く"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:23
+msgid ""
+"You can also do this from the main search box by putting a minus sign before "
+"words you don’t want: like <code>hunting -fox</code>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:24
+msgid ""
+"We also support <a href=\"/help/#searching\">a bunch of boolean search "
+"modifiers</a>, like <code>AND</code> and <code>NEAR</code>, for precise "
+"searching."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:32
+msgid "to"
+msgstr "〜へ"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:36
+msgid ""
+"You can give a <strong>start date, an end date, or both</strong> to restrict "
+"results to a particular date range. A missing end date implies the current "
+"date, and a missing start date implies the oldest date we have in the "
+"system. Dates can be entered in any format you wish, e.g. <code>3rd March "
+"2007</code> or <code>17/10/1989</code>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:40
+msgid "Person"
+msgstr "人物"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:46
+msgid ""
+"Enter a name here to restrict results to contributions only by that person."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:50
+msgid "Section"
+msgstr "セクション"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:82
+msgid ""
+"Restrict results to a particular parliament or assembly that we cover (e.g. "
+"the Scottish Parliament), or a particular type of data within an "
+"institution, such as Commons Written Answers."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:86
+msgid "Column"
+msgstr "列"
+
+#: www/includes/easyparliament/templates/html/search/form_options.php:92
+msgid ""
+"If you know the actual Hansard column number of the information you are "
+"interested in (perhaps you’re looking up a paper reference), you can "
+"restrict results to that; you can also use <code>column:123</code> in the "
+"main search box."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/person.php:12
+#, php-format
+msgid "for %s"
+msgstr "%s用"
+
+#: www/includes/easyparliament/templates/html/search/person.php:18
+msgid "current"
+msgstr "現在"
+
+#: www/includes/easyparliament/templates/html/search/results.php:24
+msgid "MPs and former MPs"
+msgstr "国会議員および元国会議員"
+
+#: www/includes/easyparliament/templates/html/search/results.php:26
+msgid "MPs"
+msgstr "国会議員"
+
+#: www/includes/easyparliament/templates/html/search/results.php:28
+msgid "Former MPs"
+msgstr "元国会議員"
+
+#: www/includes/easyparliament/templates/html/search/results.php:31
+#, php-format
+msgid "%s in constituencies matching <em class=\"current-search-term\">%s</em>"
+msgstr "<em class=\"current-search-term\">%s</em> に一致する選挙区における %s"
+
+#. count($cons) <= 1
+#: www/includes/easyparliament/templates/html/search/results.php:33
+#, php-format
+msgid "Former MP for <em class=\"current-search-term\">%s</em>"
+msgstr "<em class=\"current-search-term\">%s</em> 選挙区の元国会議員"
+
+#. count($cons) <= 1
+#: www/includes/easyparliament/templates/html/search/results.php:35
+#, php-format
+msgid "MP for <em class=\"current-search-term\">%s</em>"
+msgstr "<em class=\"current-search-term\">%s</em>選挙区の国会議員"
+
+#: www/includes/easyparliament/templates/html/search/results.php:43
+#, php-format
+msgid "People matching <em class=\"current-search-term\">%s</em>"
+msgstr "<em class=\"current-search-term\">%s</em>に一致する人物"
+
+#: www/includes/easyparliament/templates/html/search/results.php:69
+#, php-format
+msgid "Results %s–%s of %s for %s"
+msgstr "%s–%sの%s件中（%s）の結果"
+
+#: www/includes/easyparliament/templates/html/search/results.php:71
+#, php-format
+msgid "The only result for %s"
+msgstr "%s の結果は1件のみです"
+
+#: www/includes/easyparliament/templates/html/search/results.php:73
+#, php-format
+msgid "There were no results for %s"
+msgstr "%s の結果は見つかりませんでした。"
+
+#: www/includes/easyparliament/templates/html/search/results.php:75
+#, php-format
+msgid "All %s results for %s"
+msgstr "%s のすべての結果（%s）"
+
+#: www/includes/easyparliament/templates/html/search/results.php:80
+#, php-format
+msgid "Did you mean %s?"
+msgstr "%s のことですか？"
+
+#: www/includes/easyparliament/templates/html/search/results.php:87
+msgid "Sort by date"
+msgstr "日付順に並べ替え"
+
+#: www/includes/easyparliament/templates/html/search/results.php:89
+#: www/includes/easyparliament/templates/html/search/results.php:92
+#, php-format
+msgid "Sort by <a href=\"%s\">relevance</a>"
+msgstr "<a href=\"%s\">関連性</a>で並べ替え"
+
+#: www/includes/easyparliament/templates/html/search/results.php:90
+#: www/includes/easyparliament/templates/html/search/results.php:93
+msgid "Sorted by date"
+msgstr "日付順に並べ替え"
+
+#: www/includes/easyparliament/templates/html/search/results.php:95
+msgid "Group by person"
+msgstr "人物ごとにグループ化"
+
+#: www/includes/easyparliament/templates/html/search/results.php:111
+msgid "First page"
+msgstr "最初のページ"
+
+#: www/includes/easyparliament/templates/html/search/results.php:112
+msgid "Previous page"
+msgstr "前のページ"
+
+#: www/includes/easyparliament/templates/html/search/results.php:118
+msgid "Next page"
+msgstr "次のページ"
+
+#: www/includes/easyparliament/templates/html/search/results.php:119
+msgid "Final page"
+msgstr "最終ページ"
+
+#. end of !isset($error)
+#: www/includes/easyparliament/templates/html/search/sidebar.php:3
+#: www/includes/easyparliament/templates/html/senedd/index.php:16
+#: www/includes/easyparliament/templates/html/senedd/index.php:19
+msgid "Create an alert"
+msgstr "アラートを作成する"
+
+#: www/includes/easyparliament/templates/html/search/sidebar.php:5
+#, php-format
+msgid ""
+"<a href=\"%s\">Subscribe to an email alert</a> for <em class=\"current-"
+"search-term\">%s</em>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/search/sidebar.php:7
+#, php-format
+msgid "(or just <a href=\"%s\">%s</a>)"
+msgstr "（または<a href=\"%s\">%s</a>）"
+
+#: www/includes/easyparliament/templates/html/search/sidebar.php:11
+#, php-format
+msgid "Or <a href=\"%s\">get an RSS feed</a> of new matches as they happen."
+msgstr "または、<a href=\"%s\">新しい一致のRSSフィードを取得</a>して、発生時に確認できます。"
+
+#: www/includes/easyparliament/templates/html/search/sidebar.php:12
+msgid "What is RSS?"
+msgstr "RSSとは何ですか？"
+
+#: www/includes/easyparliament/templates/html/section/_business_section.php:7
+#, php-format
+msgid "Recent %s"
+msgstr "最近の%s"
+
+#: www/includes/easyparliament/templates/html/section/_business_section.php:30
+#: www/includes/easyparliament/templates/html/section/pbc_index.php:45
+#, php-format
+msgid "RSS feed of %s"
+msgstr "%sのRSSフィード"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:65
+msgid "Mon"
+msgstr "月曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:66
+msgid "Tue"
+msgstr "火曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:67
+msgid "Wed"
+msgstr "水曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:68
+msgid "Thu"
+msgstr "木曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:69
+msgid "Fri"
+msgstr "金曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:70
+msgid "Sat"
+msgstr "土曜日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:71
+msgid "Sun"
+msgstr "日"
+
+#: www/includes/easyparliament/templates/html/section/_calendar.php:165
+#, php-format
+msgid "See all of %s"
+msgstr "%sのすべてを表示"
+
+#: www/includes/easyparliament/templates/html/section/day.php:86
+#: www/includes/easyparliament/templates/html/section/recent.php:3
+#: www/includes/easyparliament/templates/html/section/year.php:37
+#, php-format
+msgid "Search %s"
+msgstr "%sを検索"
+
+#: www/includes/easyparliament/templates/html/section/_search.php:7
+msgid "Enter a keyword, phrase, or person"
+msgstr "キーワード、フレーズ、または人物を入力してください"
+
+#: www/includes/easyparliament/templates/html/section/_search.php:30
+msgid "Popular searches today"
+msgstr "今日の人気検索"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:97
+msgid "Official Report source"
+msgstr "公式報告書の出典"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:99
+msgid "Record source"
+msgstr "記録の出典"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:101
+msgid "Hansard source"
+msgstr "会議録の出典"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:214
+msgid "(Translated)"
+msgstr "（訳文をここに記入してください。※原文が入力されていませんので、原文をご提示いただければすぐに翻訳いたします。）"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:216
+msgid "(Not translated)"
+msgstr "（翻訳対象の原文が入力されていません。原文を入力してください。）"
+
+#. End of voting HTML
+#: www/includes/easyparliament/templates/html/section/_section_content.php:250
+#, php-format
+msgid "Submitted by %s"
+msgstr "%sにより提出"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:252
+msgid "See any annotations posted about this"
+msgstr "これに関する注釈を確認する"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:264
+msgid "See this speech in context"
+msgstr "この発言の文脈を確認する"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:265
+msgid "Link to this speech"
+msgstr "この発言へのリンク"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:267
+msgid "See this vote in context"
+msgstr "この採決の背景を確認する"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:268
+msgid "Link to this vote"
+msgstr "この採決へのリンク"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:270
+#: www/includes/easyparliament/templates/html/section/_section_content.php:273
+msgid "See this item in context"
+msgstr "この項目を文脈で確認する"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:271
+#: www/includes/easyparliament/templates/html/section/_section_content.php:274
+msgid "Link to this item"
+msgstr "この項目のリンク"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:289
+msgid "In context"
+msgstr "文脈内"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:290
+msgid "Individually"
+msgstr "個別"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:292
+msgid "Annotate!"
+msgstr "注釈を付ける"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:314
+msgid "Tweet"
+msgstr "ツイート"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:315
+msgid "Share"
+msgstr "共有"
+
+#: www/includes/easyparliament/templates/html/section/_section_content.php:366
+#, php-format
+msgid "%s annotation"
+msgid_plural "%s annotations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: www/includes/easyparliament/templates/html/section/section.php:16
+#, php-format
+msgid "at %s"
+msgstr "%sにて"
+
+#: www/includes/easyparliament/templates/html/section/section.php:19
+#, php-format
+msgid "on <a href=\"%s\">%s</a>"
+msgstr "<a href=\"%s\">%s</a>にて"
+
+#: www/includes/easyparliament/templates/html/section/section.php:23
+msgid "Alert me about debates like this"
+msgstr "このような会議録を通知する"
+
+#: www/includes/easyparliament/templates/html/section/_section_toc.php:27
+msgid "Votes in this debate"
+msgstr "この会議録における採決"
+
+#: www/includes/easyparliament/templates/html/section/_senedd_desc.php:2
+msgid ""
+"\n"
+"The <strong>Senedd</strong>, officially known as the Welsh\n"
+"Parliament in English and Senedd Cymru in Welsh, is the devolved,\n"
+"unicameral legislature of Wales. A democratically elected body, it\n"
+"makes laws for Wales, agrees certain taxes and scrutinises the Welsh\n"
+"Government. It is a bilingual institution, with both Welsh and\n"
+"English being the official languages of its business. From its\n"
+"creation in May 1999 until May 2020, the Senedd was known as the\n"
+"National Assembly for Wales (Welsh: Cynulliad Cenedlaethol Cymru).\n"
+"&ndash; <a href=\"https://en.wikipedia.org/wiki/Senedd\">Wikipedia</a>\n"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/section/senedd_index.php:9
+msgid "Search Senedd debates"
+msgstr "ウェールズ議会の会議録を検索"
+
+#: www/includes/easyparliament/templates/html/section/year.php:32
+#, php-format
+msgid "We don’t seem to have any %s for this year."
+msgstr "今年の%sは存在しないようです。"
+
+#: www/includes/easyparliament/templates/html/senedd/index.php:17
+msgid "Stay informed!"
+msgstr "最新情報を入手しましょう。"
+
+#: www/includes/easyparliament/templates/html/senedd/index.php:18
+msgid ""
+"Get an email every time an issue you care about is mentioned in the Senedd "
+"(and more)"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/senedd/index.php:26
+msgid "Recently in the Senedd"
+msgstr "最近のSeneddにおける"
+
+#: www/includes/easyparliament/templates/html/senedd/index.php:34
+msgid "What is the Senedd?"
+msgstr "Seneddとは何ですか？"
+
+#: www/includes/easyparliament/templates/html/static/about.php:7
+msgid "About TheyWorkForYou"
+msgstr "TheyWorkForYouについて"
+
+#: www/includes/easyparliament/templates/html/static/about.php:9
+msgid ""
+"TheyWorkForYou was founded <a href=\"https://www.mysociety.org/anniversary/"
+"\">twenty years ago</a> to make Parliament more accessible and accountable."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:11
+msgid ""
+"We believe that information about our elected representatives should be "
+"easily understandable and accessible to everyone, and not just insiders or "
+"those who can pay."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:13
+msgid ""
+"We now work across the UK's Parliaments to bring information together in one "
+"place, and make it accessible to both citizens and to civil society."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:15
+msgid ""
+"Through <a href=\"https://www.theyworkforyou.com/\">TheyWorkForYou</a> and "
+"<a href=\"https://writetothem.com\">WriteToThem</a>, we want to make it easy "
+"to understand what the UK's\n"
+"                  different layers of representation do, and make the "
+"actions of our\n"
+"                representatives and governments more transparent."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:19
+msgid "We do this by:"
+msgstr "以下の手順で行います："
+
+#: www/includes/easyparliament/templates/html/static/about.php:22
+msgid "Making parliamentary debates searchable for all Parliaments."
+msgstr "すべての議会の会議録を検索可能にします。"
+
+#: www/includes/easyparliament/templates/html/static/about.php:23
+msgid ""
+"Making it easy for people to write to their representatives at any layer of "
+"government."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:24
+msgid ""
+"Powering <a href=\"https://www.theyworkforyou.com/alert/\">email alerts</a> "
+"that let <a href=\"https://www.mysociety.org/2022/07/28/theyworkforyou-"
+"quietly-provides-essential-services-for-civil-society-and-beyond/\">citizens "
+"and civil society</a> stay informed about their representatives or areas of "
+"interest."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:25
+msgid ""
+"Adding new information and summaries that build on the information that "
+"Parliament releases (such as voting record summaries and more accessible "
+"registers of members interests)."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:28
+msgid ""
+"If you support TheyWorkForYou's goals, you can help us do more by making a "
+"<a href=\"https://www.mysociety.org/donate/?"
+"utm_source=theyworkforyou&utm_medium=website&utm_campaign=theyworkforyou-"
+"about-page\">donation</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:30
+msgid ""
+"For more information about how we run the site, please read <a href=\"/help"
+"\">our FAQs.</a>"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:38
+msgid "Credits"
+msgstr "クレジット"
+
+#: www/includes/easyparliament/templates/html/static/about.php:39
+msgid ""
+"Many thanks to mySociety team members and volunteers alike, past and "
+"present, for their work on TheyWorkForYou. Including:"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/about.php:66
+msgid "Image credits:"
+msgstr "画像のクレジット："
+
+#: www/includes/easyparliament/templates/html/static/about.php:80
+msgid ""
+"The copyright of Hansard remains under <a href=\"https://www.parliament.uk/"
+"site-information/copyright/\">Parliamentary Copyright</a>, used under "
+"licence. "
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/contact.php:6
+msgid "Who do you want to contact?"
+msgstr "連絡先を選択してください。"
+
+#: www/includes/easyparliament/templates/html/static/contact.php:7
+msgid "I need help"
+msgstr "助けが必要です"
+
+#: www/includes/easyparliament/templates/html/static/contact.php:9
+msgid ""
+"The politicians we cover on this website have a duty to help their "
+"constituents resolve problems."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/contact.php:12
+msgid ""
+"Contact your MP, councillors or regional representatives via <a href="
+"\"https://www.writetothem.com\">WriteToThem.com</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/contact.php:14
+msgid "I have feedback about this website"
+msgstr "このウェブサイトに関するフィードバックがあります"
+
+#: www/includes/easyparliament/templates/html/static/contact.php:16
+msgid ""
+"Check our <a href=\"/help/\">FAQs</a> first; your question might be answered "
+"there."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/contact.php:19
+msgid ""
+"If not, TheyWorkForYou's technical support team can be contacted on\n"
+"                <a href=\"mailto:support@theyworkforyou.com"
+"\">support@theyworkforyou.com</a>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/contact.php:23
+msgid ""
+"We can only help you with this website - <b>this email will not go to your "
+"MP</b>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/_newsletter.php:2
+msgid "About mySociety"
+msgstr "mySocietyについて"
+
+#: www/includes/easyparliament/templates/html/static/_newsletter.php:4
+msgid "Sign up for updates on our democracy and Parliaments work"
+msgstr "民主主義と国会の活動に関する最新情報を受け取る"
+
+#: www/includes/easyparliament/templates/html/static/_newsletter.php:28
+msgid ""
+"TheyWorkForYou is run by <a href=\"https://www.mysociety.org/\">mySociety</"
+"a>, a UK charity that helps people access information and participate in "
+"democracy. We enable people across the UK to become changemakers by "
+"providing technology, research and data, openly and for free."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/_newsletter.php:29
+msgid ""
+"Through <strong>TheyWorkForYou</strong> and <strong>WriteToThem</strong> we "
+"have made elected representatives more transparent and contactable. Every "
+"year, hundreds of thousands of reports are made through <strong>FixMyStreet</"
+"strong>, and over a million Freedom of Information requests have been made "
+"through <strong>WhatDoTheyKnow</strong>."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/static/_newsletter.php:31
+msgid "Find out more about how mySociety is funded."
+msgstr "mySocietyの資金調達について詳しく知る。"
+
+#: www/includes/easyparliament/templates/html/user/form.php:20
+#: www/includes/easyparliament/templates/html/user/form.php:110
+#: www/includes/easyparliament/templates/html/user/join.php:89
+msgid "Your UK postcode:"
+msgstr "あなたの住所："
+
+#: www/includes/easyparliament/templates/html/user/form.php:21
+#: www/includes/easyparliament/templates/html/user/form.php:111
+#: www/includes/easyparliament/templates/html/user/join.php:90
+msgid "Optional and not public"
+msgstr "任意かつ非公開"
+
+#: www/includes/easyparliament/templates/html/user/form.php:25
+msgid "We use this to show you information about your MP."
+msgstr "これを使用して、あなたの国会議員に関する情報をお知らせします。"
+
+#: www/includes/easyparliament/templates/html/user/form.php:29
+#: www/includes/easyparliament/templates/html/user/form.php:204
+msgid "Update details"
+msgstr "詳細を更新"
+
+#: www/includes/easyparliament/templates/html/user/form.php:40
+#: www/includes/easyparliament/templates/html/user/index.php:28
+msgid "Edit your details"
+msgstr "詳細を編集する"
+
+#: www/includes/easyparliament/templates/html/user/form.php:51
+#: www/includes/easyparliament/templates/html/user/join.php:33
+msgid "Your first name:"
+msgstr "氏名（下の名前）："
+
+#: www/includes/easyparliament/templates/html/user/form.php:62
+#: www/includes/easyparliament/templates/html/user/join.php:44
+msgid "Your last name:"
+msgstr "姓："
+
+#: www/includes/easyparliament/templates/html/user/form.php:84
+msgid ""
+"To change your password enter a new one twice below (otherwise, leave blank)."
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/user/form.php:88
+#: www/includes/easyparliament/templates/html/user/join.php:67
+msgid "At least six characters"
+msgstr "6文字以上"
+
+#: www/includes/easyparliament/templates/html/user/form.php:98
+#: www/includes/easyparliament/templates/html/user/join.php:77
+msgid "Repeat password:"
+msgstr "パスワードを再入力してください："
+
+#: www/includes/easyparliament/templates/html/user/form.php:121
+msgid "Your website:"
+msgstr "あなたのウェブサイト："
+
+#: www/includes/easyparliament/templates/html/user/form.php:122
+msgid "Optional and public"
+msgstr "任意かつ公開"
+
+#: www/includes/easyparliament/templates/html/user/form.php:152
+msgid "Organisation:"
+msgstr "組織："
+
+#: www/includes/easyparliament/templates/html/user/form.php:175
+msgid "Can we send you occasional emails about TheyWorkForYou.com?"
+msgstr "TheyWorkForYou.comに関するメールを時々お送りしてもよろしいですか？"
+
+#: www/includes/easyparliament/templates/html/user/form.php:176
+msgid ""
+"Do you want to receive our newsletter about our wider democracy work, "
+"including our research and campaigns?"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/user/form.php:177
+#: www/includes/easyparliament/templates/html/user/join.php:103
+msgid ""
+"Do you want to receive the monthly newsletter from mySociety, with news on "
+"TheyWorkForYou and our other projects?"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/user/index.php:12
+msgid "Your details"
+msgstr "あなたの詳細"
+
+#: www/includes/easyparliament/templates/html/user/index.php:39
+#: www/includes/easyparliament/templates/html/user/view_user.php:10
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: www/includes/easyparliament/templates/html/user/index.php:51
+#: www/includes/easyparliament/templates/html/user/view_user.php:15
+msgid "Status"
+msgstr "状況"
+
+#: www/includes/easyparliament/templates/html/user/index.php:56
+#: www/includes/easyparliament/templates/html/user/view_user.php:19
+msgid "Joined"
+msgstr "参加しました"
+
+#: www/includes/easyparliament/templates/html/user/join.php:9
+msgid "Create a TheyWorkForYou Account"
+msgstr "TheyWorkForYouアカウントを作成する"
+
+#: www/includes/easyparliament/templates/html/user/join.php:11
+msgid "Already registered? <a href=\"/user/login/\">Then sign in!</a>"
+msgstr "登録済みですか？<a href=\"/user/login/\">ログインしてください。</a>"
+
+#: www/includes/easyparliament/templates/html/user/join.php:130
+msgid ""
+"Would you like to receive email updates on your MP&rsquo;s activity in "
+"Parliament?"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/user/join.php:131
+msgid ""
+"(if you&rsquo;re already getting email alerts to your address, don&rsquo;t "
+"worry about this)"
+msgstr ""
+
+#: www/includes/easyparliament/templates/html/user/view_user.php:3
+msgid "User details"
+msgstr "ユーザー詳細"
+
+#: www/includes/utility.php:178
+msgid "Sorry, an error has occurred"
+msgstr "エラーが発生しました。"
+
+#: www/includes/utility.php:179
+msgid "We've been notified by email and will try to fix the problem soon!"
+msgstr "メールで通知を受け取りました。速やかに問題を修正いたします。"

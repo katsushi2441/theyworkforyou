@@ -46,7 +46,18 @@ RUN mkdir -p /usr/local/share/fonts/truetype/merriweather \
       && fc-cache -f -v
 
 RUN echo "cy_GB.UTF-8 UTF-8" >> /etc/locale.gen
+# 日本語版で gettext を使うには OS 側のロケールが要る。
+# 無いと setlocale が失敗し、.mo があっても英語のまま出る（2026-09-27 実測）。
+RUN echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen
 RUN /usr/sbin/locale-gen
+
+# Debian の php-xapian は xapian.so を置くだけで conf.d に設定を作らない。
+# そのため拡張が読まれず、TWFY は「/usr/share/php/xapian.php does not exist」と
+# 判断して検索機能を黙って無効にする（2026-09-27 に実際にそうなっていた）。
+# cli と apache2 の両方で読ませる。
+RUN for d in /etc/php/*/cli /etc/php/*/apache2; do \
+      [ -d "$d/conf.d" ] && echo 'extension=xapian.so' > "$d/conf.d/20-xapian.ini"; \
+    done; php -m | grep -q xapian
 
 ENV POETRY_VERSION 2.2.1
 RUN curl -sSL https://install.python-poetry.org | python3 -

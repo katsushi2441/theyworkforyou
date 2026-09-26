@@ -40,15 +40,30 @@ include_once INCLUDESPATH . 'utility.php';
 twfy_debug_timestamp("after including utility.php");
 
 bindtextdomain('TheyWorkForYou', BASEDIR . '/../../locale');
+/**
+ * 表示言語を決める。
+ *
+ * 上流はサーバー名の先頭2文字が cy ならウェールズ語、という作りだった。
+ * 日本語版は「ホスト名で切り替える」だけだと開発中に切り替えられないので、
+ * conf/general の TWFY_DEFAULT_LANGUAGE でも指定できるようにしてある。
+ * 未設定なら従来どおりの挙動（英語、cy ならウェールズ語）。
+ *
+ * OS 側のロケールが無いと setlocale が失敗し、.mo があっても英語のまま出る。
+ * ja を使うなら Dockerfile で ja_JP.UTF-8 を生成しておくこと（2026-09-27 実測）。
+ */
+$twfy_lang = defined('TWFY_DEFAULT_LANGUAGE') ? TWFY_DEFAULT_LANGUAGE : '';
 if (substr($_SERVER['SERVER_NAME'] ?? '', 0, 2) == 'cy') {
-    define('LANGUAGE', 'cy');
-    setlocale(LC_ALL, 'cy_GB.UTF-8');
-    putenv('LC_ALL=cy_GB.UTF-8');
-} else {
-    define('LANGUAGE', 'en');
-    setlocale(LC_ALL, 'en_GB.UTF-8');
-    putenv('LC_ALL=en_GB.UTF-8');
+    $twfy_lang = 'cy';
+} elseif (substr($_SERVER['SERVER_NAME'] ?? '', 0, 2) == 'ja') {
+    $twfy_lang = 'ja';
 }
+$twfy_locales = ['cy' => 'cy_GB.UTF-8', 'ja' => 'ja_JP.UTF-8', 'en' => 'en_GB.UTF-8'];
+if (!isset($twfy_locales[$twfy_lang])) {
+    $twfy_lang = 'en';
+}
+define('LANGUAGE', $twfy_lang);
+setlocale(LC_ALL, $twfy_locales[$twfy_lang]);
+putenv('LC_ALL=' . $twfy_locales[$twfy_lang]);
 textdomain('TheyWorkForYou');
 
 // Set the default timezone

@@ -90,7 +90,24 @@ my $stemmer = new Search::Xapian::Stem('english');
 my $db = Search::Xapian::WritableDatabase->new($dbfile, Search::Xapian::DB_CREATE_OR_OPEN);
 my $termgenerator = new Search::Xapian::TermGenerator();
 
-$termgenerator->set_flags(Search::Xapian::FLAG_SPELLING);
+# 日本語を検索できるようにするには CJK の n-gram が要る。
+# Xapian の既定は空白と句読点でしか切らないので、日本語は「一文まるごとが一語」に
+# なり、「憲法」で引いても一件も当たらない（2026-09-27 に実測）。
+# **索引側と検索側の両方**で立てないと噛み合わないので、ここと
+# www/includes/easyparliament/searchengine.php の twfy_cjk_ngram_flag() は対で直すこと。
+# 英語だけの既存運用を変えないよう、環境変数 TWFY_CJK_NGRAM=1 のときだけ足す。
+my $index_flags = Search::Xapian::FLAG_SPELLING;
+if ($ENV{'TWFY_CJK_NGRAM'}) {
+    # Search::Xapian 1.4.22 の Perl バインディングは FLAG_CJK_NGRAM を export しない
+    # （PHP 側には XapianTermGenerator::FLAG_CJK_NGRAM がある）。ライブラリ本体は
+    # 対応しているので、値を直接渡す。2048 は PHP 側で実測した値（2026-09-27）。
+    # 将来 Perl 側に定数が入ったらそちらを使う。
+    my $CJK_NGRAM = defined(&Search::Xapian::FLAG_CJK_NGRAM)
+        ? Search::Xapian::FLAG_CJK_NGRAM() : 2048;
+    $index_flags |= $CJK_NGRAM;
+    print "CJK n-gram indexing enabled (flag $CJK_NGRAM)\n";
+}
+$termgenerator->set_flags($index_flags);
 $termgenerator->set_database($db);
 $termgenerator->set_stemmer($stemmer);
 # $termgenerator->set_stopper();
@@ -217,7 +234,14 @@ if ($action ne "check" && $action ne 'checkfull') {
         $doc->add_value(2, pack('N', $$row{'created'}) . pack('N', $$row{'hpos'})); # For email alerts
         $doc->add_value(3, $subsection_or_id); # For collapsing on segment
 
-        $parser->parse($$row{'body'});
+        # HTML::Parser は「文字列」を期待する。DBから来るのはUTF-8のバイト列なので、
+        # そのまま渡すと「Parsing of undecoded UTF-8 will give garbage」と警告が出て
+        # 日本語が壊れる（2026-09-27 実測）。先にデコードしてから渡す。
+        my $body = $$row{'body'};
+        if ($ENV{'TWFY_CJK_NGRAM'} && !utf8::is_utf8($body)) {
+            utf8::decode($body);
+        }
+        $parser->parse($body);
         $parser->eof();
         $termgenerator->increase_termpos();
         $termgenerator->index_text($name) if $name; # Index speaker name too so can search on them and words

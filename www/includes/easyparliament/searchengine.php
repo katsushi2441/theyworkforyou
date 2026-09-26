@@ -29,9 +29,31 @@ Example usage:
 if (defined('XAPIANDB') and XAPIANDB != '') {
     if (file_exists('/usr/share/php/xapian.php')) {
         include_once '/usr/share/php/xapian.php';
-    } else {
-        twfy_debug('SEARCH', '/usr/share/php/xapian.php does not exist');
+    } elseif (!class_exists('XapianDatabase')) {
+        // Debian の php-xapian は /usr/lib/php/<api>/xapian.so を入れるだけで
+        // /usr/share/php/xapian.php を置かない。拡張が conf.d で読まれていれば
+        // クラスは使えるので、ファイルの有無だけで「検索なし」に落とさない。
+        twfy_debug('SEARCH', 'xapian extension is not loaded');
     }
+}
+
+/**
+ * 日本語を検索するには CJK の n-gram が要る。
+ *
+ * Xapian の既定は空白と句読点でしか切らないので、日本語は「一文まるごとが一語」に
+ * なり、「憲法」で引いても一件も当たらない（2026-09-27 に実測。3文書で語が3つだった）。
+ * FLAG_CJK_NGRAM を **索引側と検索側の両方** で立てると噛み合う。
+ * 索引側は scripts/xapian-index/ 相当のインデクサに同じ定数を渡すこと。
+ *
+ * 英語だけで運用する既存サイトの挙動を変えないよう、conf/general の
+ * TWFY_CJK_NGRAM が真のときだけ立てる。
+ */
+function twfy_cjk_ngram_flag($class) {
+    if (!defined('TWFY_CJK_NGRAM') || !TWFY_CJK_NGRAM) {
+        return 0;
+    }
+    $const = $class . '::FLAG_CJK_NGRAM';
+    return defined($const) ? constant($const) : 0;
 }
 
 class SEARCHENGINE {
@@ -225,6 +247,7 @@ class SEARCHENGINE {
         $flags = XapianQueryParser::FLAG_BOOLEAN | XapianQueryParser::FLAG_LOVEHATE
             | XapianQueryParser::FLAG_WILDCARD | XapianQueryParser::FLAG_SPELLING_CORRECTION;
         $flags = $flags | XapianQueryParser::FLAG_PHRASE;
+        $flags = $flags | twfy_cjk_ngram_flag('XapianQueryParser');
 
         # Without Welsh handling first, for spelling correction
         try {

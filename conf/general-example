@@ -211,3 +211,5 @@ define('GOOGLE_ANALYTICS_ID', 'G-W8M9N1MJFT');
 
 // Google Analytics 4 measurement protocol secret
 define('MEASUREMENT_PROTOCOL_SECRET', '');
+// 日本語などCJKの全文検索を使うなら true。索引側は TWFY_CJK_NGRAM=1 を渡す。
+define ("TWFY_CJK_NGRAM", false);

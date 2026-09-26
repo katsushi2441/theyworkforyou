@@ -38,7 +38,13 @@ use TWFY::Utils;
 # output_filter 'safe' uses entities &#nnnn; to encode characters, this is
 # the easiest/most reliable way to get the encodings correct for content
 # output with Twig's ->sprint (content, rather than attributes)
-my $outputfilter = 'safe';
+#
+# ただし 'safe' は **ASCII 以外をすべて &#nnnn; にする**ので、日本語の本文は
+# DB に「&#12371;&#12428;…」の形で入り、そのまま画面にも検索索引にも流れる
+# （2026-09-27 に実測）。日本語で運用するときは 'safe_hex' でもなく、
+# フィルタ無し（UTF-8 のまま）にする必要がある。
+# 環境変数 TWFY_UTF8_OUTPUT=1 で切り替える。英語運用の既定は従来どおり。
+my $outputfilter = $ENV{'TWFY_UTF8_OUTPUT'} ? undef : 'safe';
 #DBI->trace(1);
 
 use vars qw($all $recent $date $datefrom $dateto $wrans $debates $westminhall
