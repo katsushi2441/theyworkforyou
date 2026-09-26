@@ -37,6 +37,17 @@ docker compose exec -T -e TWFY_CJK_NGRAM=1 twfy sh -c \
   "cd /twfy/search && perl index.pl daterange 2026-06-01 2026-06-30"
 ```
 
+```bash
+# 9. 郵便番号・政令市の区 → 小選挙区（郵便番号データは日本郵便から取得して data/jp/ に置く）
+GIIN_DB=/path/to/giin.sqlite /usr/bin/python3 scripts-jp/build_area_index.py \
+  --ken-all data/jp/utf_ken_all.csv --area-json twfy_area.json --sqlite twfy_demo.sqlite
+#    期待値: 市区町村 1741 / 複数の選挙区にまたがる 47 / 区でまたがる 7 / 区域データに無い市区町村名 0
+
+# 10. 参議院の本会議投票（議員別の賛否）
+/usr/bin/python3 scripts-jp/sangiin_votes.py --session 221 --sqlite twfy_demo.sqlite
+#    「!! 投票総数と議員別が合わない」が1件でも出たら、画面の区切りが変わっている
+```
+
 ## 確認（ここまでやって初めて「動いた」と言う）
 
 ```bash
