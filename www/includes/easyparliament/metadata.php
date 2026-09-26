@@ -724,6 +724,18 @@ $page =  [
         'url'			=> 'mps/',
     ],
 
+    /* 日本語版。英国版の入口は /postcode/（MapIt に郵便番号を投げる）だが、
+       日本には郵便番号→小選挙区の公式な対応が無いので、市区町村を入口にする。 */
+    'jusho' =>  [
+        'menu'			=>  [
+            'text'			=> '住所から探す',
+            'title'			=> '市区町村から小選挙区と衆議院議員を調べる',
+        ],
+        'parent'		=> 'hansard',
+        'title'			=> '住所から選挙区と議員を調べる',
+        'url'			=> 'jusho/',
+    ],
+
     /* Northern Ireland Assembly */
     'ni_home' => [
         'menu'			=>  [
