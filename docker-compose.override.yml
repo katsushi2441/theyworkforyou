@@ -10,13 +10,12 @@ services:
   twfy:
     ports: !override
       - "127.0.0.1:18383:80"
+  # 付属品（Redis・Sentinel・MailHog）はホストへ出さない（2026-10-30）。twfy とは compose の内部ネットワークで
+  # 名前（redis / sentinel / mailhog）でつながるので、ホスト側の番号は要らない。18300番台が埋まったので空けた。
+  # MailHog の画面（8025）を見たいときは、一時的に ports を戻して docker compose up -d mailhog する。
   redis:
-    ports: !override
-      - "127.0.0.1:18387:6379"
+    ports: !reset []
   sentinel:
-    ports: !override
-      - "127.0.0.1:18388:26379"
+    ports: !reset []
   mailhog:
-    ports: !override
-      - "127.0.0.1:18389:1025"
-      - "127.0.0.1:18391:8025"
+    ports: !reset []
